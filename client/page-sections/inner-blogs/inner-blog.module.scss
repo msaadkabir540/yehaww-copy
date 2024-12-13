@@ -1,0 +1,23 @@
+@import "/styles/colors";
+@import "styles/breakpoints";
+@import "styles/mixin";
+
+.headingDiv {
+  margin-top: 23px;
+}
+.breadCrumb {
+  padding: 0 !important;
+  border: none !important;
+}
+.breadCrumbContainer {
+  padding: 0px;
+  @media (max-width: $tab) {
+    display: none;
+  }
+}
+.breadCrumbContainer1 {
+  display: none;
+  @media (max-width: $tab) {
+    display: flex;
+  }
+}

@@ -1,0 +1,44 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.rightDiv {
+  background: #fafafa;
+  border: 1px solid #ebebeb;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  position: absolute;
+  z-index: 10000;
+  left: 0px;
+  top: 30px;
+  width: 100%;
+
+  @media (max-width: 600px) {
+    left: -50%;
+  }
+
+  h6 {
+    font-weight: 600;
+    font-size: 12px;
+    color: #b29e85;
+    border-bottom: 0.5px solid #ebebeb;
+    padding: 20px 15px 10px 15px;
+  }
+  p {
+    font-weight: 400;
+    font-size: 8px;
+    margin-bottom: 10px;
+    color: #333333;
+  }
+  ul {
+    li {
+      font-weight: 400;
+      font-size: 8px;
+      color: #333333;
+      margin-top: 10px;
+      list-style: auto;
+      margin-left: 8px;
+      padding-left: 5px;
+    }
+  }
+}

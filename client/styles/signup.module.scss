@@ -1,0 +1,37 @@
+@import "./colors.scss";
+@import "./breakpoints";
+@import "./mixin.scss";
+
+.loginMain {
+  @include gridTwo(0, 0);
+  .bgImage {
+    background-image: url("../public/assets/imgs/bg-signup.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    @media (max-width: $lg) {
+      height: 500px;
+    }
+    h1 {
+      font-weight: 700;
+      font-size: 55px;
+      color: #ffffff;
+      @media (max-width: $xs) {
+        font-size: 40px;
+      }
+    }
+    .loginPara {
+      font-weight: 400;
+      font-size: 21px;
+      color: #ffffff;
+      margin-top: 20px;
+      @media (max-width: $xs) {
+        font-size: 17px;
+      }
+    }
+  }
+}

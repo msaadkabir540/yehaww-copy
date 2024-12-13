@@ -1,0 +1,115 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0px;
+  flex-direction: column;
+  h2 {
+    color: #151b23;
+    font-size: 45px;
+    font-weight: 600;
+    @media (max-width: breakpoints.$tab) {
+      font-size: 35px;
+    }
+    @media (max-width: breakpoints.$xxs) {
+      font-size: 25px;
+    }
+  }
+  .infopara {
+    text-align: center;
+    font-size: 16px;
+    max-width: 800px;
+    margin: 8px 0;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+  .contents {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 220px;
+    margin: 26px 0;
+    .commonclass {
+      display: flex;
+      align-items: center;
+      margin-bottom: 40px;
+      img {
+        @media (max-width: 500px) {
+          width: 22px !important;
+          height: 22px !important;
+        }
+      }
+      p {
+        font-size: 18px;
+        color: #252525;
+        font-weight: 400;
+        margin-left: 10px;
+        width: fit-content;
+      }
+      @media (max-width: breakpoints.$md) {
+        justify-content: flex-start;
+      }
+    }
+    .imgRec {
+      max-width: 600px !important;
+      max-height: 500px !important;
+      @media (max-width: breakpoints.$lg) {
+        display: none;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        @media (max-width: breakpoints.$lg) {
+          max-width: 600px;
+          max-height: 500px;
+        }
+      }
+    }
+  }
+  .gridTHree {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 40px;
+    @media (max-width: breakpoints.$tab) {
+      flex-direction: column;
+      align-items: center;
+    }
+    h3 {
+      font-weight: 600;
+      font-size: 42px;
+      color: #252525;
+      max-width: 410px;
+      @media (max-width: breakpoints.$tab) {
+        max-width: 100%;
+        font-size: 25px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+    }
+    .lastsec {
+      display: flex;
+      margin-top: 10px;
+      p {
+        font-size: 1.4rem;
+        color: #959595;
+        font-weight: 500;
+        cursor: pointer;
+        &:hover {
+          color: colors.$btn;
+          @media (max-width: breakpoints.$xxs) {
+            font-size: 15px;
+            font-weight: 200;
+          }
+        }
+      }
+      img {
+        color: #959595;
+        margin-right: 8px;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.mainInner {
+  background: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 20px;
+  padding: 0px 15px 15px 15px;
+  p {
+    color: #2c2c2c;
+    font-weight: 300;
+    cursor: pointer;
+    padding: 15px 0px;
+  }
+  .borderClass {
+    border-bottom: 0.3px solid rgba(149, 149, 149, 0.2);
+  }
+}

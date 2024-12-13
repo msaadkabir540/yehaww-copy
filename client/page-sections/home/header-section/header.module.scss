@@ -1,0 +1,413 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.HeaderSection {
+  .headerTop {
+    padding: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: breakpoints.$md) {
+      display: none;
+    }
+    h5 {
+      font-weight: 600;
+      font-size: 65px;
+      color: colors.$white;
+    }
+    p {
+      color: colors.$white;
+      font-weight: 400;
+      font-size: 20px;
+      max-width: 1050px;
+      margin-top: 10px;
+      text-align: center;
+      span {
+        font-weight: 600;
+        color: colors.$white;
+        text-decoration: underline;
+        &:hover {
+          color: #959595;
+          text-decoration: none;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.buttonDiv {
+  display: flex;
+  max-width: 700px;
+  align-items: center;
+  padding: 50px 0px;
+  @media (max-width: breakpoints.$md) {
+    display: none;
+  }
+  p {
+    font-size: 14px;
+    color: colors.$white;
+    font-weight: 500;
+    line-height: 1.6;
+    span {
+      font-weight: 600;
+      color: colors.$white;
+      text-decoration: underline;
+      font-weight: 400;
+      &:hover {
+        color: #959595;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+  }
+  button {
+    border: 1px solid colors.$white;
+    color: colors.$white;
+    background-color: transparent;
+    margin-left: 20px;
+    height: 32px;
+  }
+}
+
+.mainDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .tabDiv {
+    display: flex;
+    align-items: center;
+    @media (max-width: breakpoints.$md) {
+      padding-top: 10px;
+    }
+    p {
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 18px;
+      color: #c0c0c0;
+      padding: 9px 15px;
+      display: flex;
+      align-items: center;
+      border: 1px solid transparent;
+      border-radius: 3px;
+      @media (max-width: breakpoints.$md) {
+        text-align: center;
+      }
+      @media (max-width: breakpoints.$tab) {
+        font-size: 16px;
+      }
+      @media (max-width: breakpoints.$xxs) {
+        font-size: 14px;
+      }
+      &:hover {
+        color: colors.$white;
+        span {
+          color: colors.$white;
+        }
+      }
+      span {
+        color: #c0c0c0;
+        font-weight: 500;
+        margin-right: 5px;
+      }
+    }
+    .p {
+      border: 1px solid #ffffff;
+      color: #ffffff;
+      @media (max-width: breakpoints.$md) {
+        padding: 10px 30px;
+        margin-right: 10px;
+      }
+      @media (max-width: breakpoints.$tab) {
+        font-size: 16px;
+        padding: 10px;
+      }
+      @media (max-width: breakpoints.$xxs) {
+        font-size: 14px;
+      }
+    }
+    .p1 {
+      color: #ffffff;
+
+      @media (max-width: breakpoints.$tab) {
+        font-size: 16px;
+      }
+      @media (max-width: breakpoints.$xxs) {
+        font-size: 14px;
+      }
+    }
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    background: transparent;
+  }
+
+  ul li a,
+  ul li {
+    cursor: pointer;
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+  ul li {
+    display: block;
+  }
+
+  ul li a {
+    padding: 0px 0px;
+    background: transparent;
+    color: #0e0e0e !important;
+    display: block;
+    font-weight: 400;
+    font-size: 13px;
+  }
+
+  li a:hover {
+    background-color: #fff;
+    color: #b29e85;
+  }
+
+  ul li ul {
+    background: #fff;
+    position: absolute;
+    width: 213px;
+    display: none;
+    z-index: 200;
+  }
+
+  li ul li a {
+    padding: 10px;
+    color: #555;
+    background-color: #fff;
+  }
+  li ul li button {
+    padding: 10px;
+    color: #0e0e0e !important;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    &:hover {
+      color: #fff !important;
+      background-color: #b29e85 !important;
+    }
+  }
+
+  li ul li a:hover {
+    background: colors.$btn;
+    color: #fff !important;
+  }
+
+  ul li ul li {
+    position: relative;
+  }
+
+  ul li ul li ul {
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    margin-top: 0px;
+    height: max-content;
+    max-height: 350px;
+    overflow-y: auto;
+    @media (max-width: 425px) {
+      top: 40px;
+      left: 70px;
+    }
+    @media (max-width: 350px) {
+      top: 40px;
+      left: 35px;
+    }
+  }
+  li:hover > ul,
+  li:active > ul {
+    display: block;
+    box-shadow: 0px 0px 10px 0px #a9a6a6;
+  }
+
+  .dropdown {
+    position: relative;
+  }
+
+  .dropdown > a,
+  .dropdown > a:hover,
+  .dropdown.active > a,
+  .dropdown.active > a:hover {
+    background: url("https://i.postimg.cc/y8b7mfcJ/arrow.png");
+    background-position: right;
+    background-size: 15px;
+    background-repeat: no-repeat;
+    color: #555;
+  }
+}
+
+.card {
+  margin-top: 29px;
+  background: #fafafa;
+  border: 1.5px solid #ebebeb;
+  max-width: 1350px;
+  width: 100%;
+  border-radius: 6px;
+  flex-direction: row;
+  @media (max-width: breakpoints.$lg) {
+    margin: 30px 0px;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .mainCard {
+    align-items: center;
+    @include gridFour(0, 15);
+
+    .searchDivSelect {
+      margin: 15px 0px;
+      padding: 0px 25px;
+      border-right: 1px solid #959595;
+      width: 100%;
+
+      @media (max-width: 600px) {
+        border-right: 1px solid transparent;
+      }
+      .searchSelect {
+        border: none !important;
+        background-color: transparent;
+        margin-top: 0px;
+        padding: 0px;
+        width: 100%;
+      }
+    }
+    .experience {
+      @media (max-width: breakpoints.$lg) {
+        padding-left: 25px;
+      }
+    }
+  }
+}
+.selectDiv {
+  padding-right: 15px;
+  border-right: 1px solid #959595;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  &:last-child {
+    border-right: none;
+  }
+  @media (max-width: breakpoints.$lg) {
+    margin: 15px 0px;
+  }
+  @media (max-width: 600px) {
+    border-right: 1px solid transparent;
+    padding-left: 25px;
+  }
+  .select {
+    width: 100%;
+    & > div {
+      select {
+        margin-top: 0px;
+        padding-right: 20px;
+        border: none !important;
+        background-color: transparent !important;
+      }
+    }
+  }
+}
+.searchBtn {
+  margin-left: 20px;
+  @media (max-width: breakpoints.$lg) {
+    display: none;
+  }
+}
+.img {
+  margin-right: 12px;
+  height: 23px;
+  width: 25px;
+  display: flex;
+}
+.locationDiv {
+  border-right: none;
+  padding-right: 6px;
+  padding-left: 15px;
+  @media (max-width: breakpoints.$lg) {
+    padding-left: 0px;
+    padding-right: 15px;
+  }
+
+  @media (max-width: 600px) {
+    padding-left: 25px;
+  }
+}
+.searchBtn1 {
+  display: none;
+  @media (max-width: breakpoints.$lg) {
+    display: block;
+    margin: 20px;
+  }
+}
+
+.avail {
+  @media (max-width: breakpoints.$lg) {
+    border-right: none;
+    padding-left: 23px;
+  }
+}
+.mainCard1 {
+  grid-template-columns: 2fr 2fr 2fr 3fr !important;
+  @media (max-width: breakpoints.$lg) {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}
+.inputMainClass {
+  input {
+    border: none !important;
+    box-shadow: none;
+    background-color: none;
+    border-width: 0px;
+    width: 200px;
+    padding: 0px;
+    margin-top: 0px !important;
+  }
+}
+.searchDivSelect1 {
+  margin: 5px 0px;
+  padding: 0px 25px;
+  border-right: 1px solid #959595;
+  width: 100%;
+  height: 43px;
+
+  @media (max-width: breakpoints.$lg) {
+    border-right: none;
+  }
+  .searchSelect {
+    border: none !important;
+    background-color: transparent;
+    margin-top: 0px;
+    padding: 0px;
+    width: 100%;
+  }
+}
+
+.hide {
+  display: none;
+}
+.form {
+  position: relative;
+  z-index: 100;
+}
+.img1 {
+  margin-right: 12px;
+  height: 23px;
+  width: 40px;
+  display: flex;
+  @media (max-width: 1024px) {
+    width: 20px;
+  }
+}

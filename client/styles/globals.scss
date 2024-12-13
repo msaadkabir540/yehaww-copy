@@ -1,0 +1,178 @@
+// @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: #2c2c2c;
+  overflow-wrap: anywhere;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0px !important;
+  padding: 0px;
+  scroll-behavior: smooth;
+  color: #2c2c2c;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.loaderClass {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  img {
+    width: 300px;
+    margin: 20px;
+  }
+}
+
+.fa {
+  height: 40px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+option {
+  padding: 10px;
+}
+
+.carousel .control-dots .dot {
+  background: #cfc7c7 !important;
+  width: 15px !important;
+  height: 15px !important;
+  margin-top: 20px !important;
+  box-shadow: none !important;
+}
+.carousel .control-dots .dot.selected {
+  box-shadow: none !important;
+  background: #b29e85 !important;
+}
+.css-14el2xx-placeholder {
+  padding: 0px !important;
+  margin: 0px !important;
+  color: #bfbfbf !important;
+}
+.css-1okebmr-indicatorSeparator {
+  display: none !important;
+}
+.css-tlfecz-indicatorContainer {
+  color: #acacac !important;
+  padding: 0px !important;
+}
+.css-b62m3t-container {
+  width: 100%;
+}
+.css-tj5bde-Svg {
+  fill: #acacac !important;
+}
+.react-tel-input .selected-flag:hover,
+.react-tel-input .selected-flag:focus {
+  background-color: transparent !important;
+}
+
+::-webkit-scrollbar {
+  width: 5px; /* Remove scrollbar space */
+  background: #e6e7e8; /* Optional: just make scrollbar invisible */
+  height: 5px;
+  border-radius: 8px;
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #c7c8ca;
+  border-radius: 8px;
+}
+::-webkit-scrollbar:vertical {
+  width: 15px; /* Remove scrollbar space */
+  background: #e6e7e8; /* Optional: just make scrollbar invisible */
+  height: 5px;
+  border-radius: 8px;
+}
+.slick-slider {
+  width: 100%;
+  overflow: hidden;
+}
+.slick-list {
+  position: relative;
+  display: block !important;
+  width: 100%;
+}
+.slick-slide div {
+  width: auto;
+  margin-right: 10px;
+}
+.slick-dots {
+  position: relative !important;
+  bottom: -3px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 5px !important;
+  margin-top: 17px !important;
+}
+.slick-dots li button {
+  width: 15px !important;
+  height: 11px !important;
+  padding: 0px !important;
+  background: #cccccc !important;
+  border-radius: 12px !important;
+  margin-right: 0px !important;
+}
+.slick-dots {
+  .slick-active {
+    width: 25px !important;
+  }
+}
+.slick-dots .slick-active button {
+  background: linear-gradient(91.82deg, #ff6c4a -18.02%, #ff2f61 141.11%) !important;
+  width: 25px !important;
+}
+.slick-dots li {
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+  width: 15px !important;
+  height: 15px !important;
+}
+
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+  background: linear-gradient(91.82deg, #ff6c4a -18.02%, #ff2f61 141.11%) !important;
+}
+.slick-dots li button:before {
+  display: none !important;
+}
+.slick-slide {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.container {
+  max-width: 1050px;
+  margin: 0 auto;
+  display: flex;
+}
+
+// input[type="range"]::-webkit-slider-thumb {
+//   -webkit-appearance: none;
+//   appearance: none;
+//   width: 20px; /* Adjust thumb width */
+//   height: 20px; /* Adjust thumb height */
+//   background-image: url("../public/assets/slider-thumb.svg"); /* Replace with your image path */
+//   background-size: cover;
+//   border: none; /* Remove any default border */
+// }

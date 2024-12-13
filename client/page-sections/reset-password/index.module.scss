@@ -1,0 +1,64 @@
+.resetModalMain {
+  .resetModalHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h5 {
+      font-size: 18px;
+    }
+    img {
+      width: 20px;
+      cursor: pointer;
+    }
+  }
+  .resetModalBody {
+    margin-top: 20px;
+    .email {
+      margin-bottom: 15px;
+    }
+    .submitDiv {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 25px;
+      .button {
+        width: 500px;
+        max-width: 500px;
+      }
+    }
+  }
+}
+
+.forgetPassModalMain {
+  .forgetPassModalHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h5 {
+      font-size: 18px;
+    }
+    .img {
+      width: 20px;
+      cursor: pointer;
+    }
+  }
+  .forgetPassModalBody {
+    margin-top: 20px;
+    .email {
+    }
+    .submitDiv {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 25px;
+      .button {
+        width: 500px;
+        max-width: 500px;
+      }
+    }
+  }
+}
+
+.errorMessage {
+  position: initial !important;
+}

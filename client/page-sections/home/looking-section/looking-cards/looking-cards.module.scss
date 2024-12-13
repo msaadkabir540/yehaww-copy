@@ -1,0 +1,53 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.parent {
+  @include gridTwo(20, 20);
+
+  .main {
+    cursor: pointer;
+    .imgDiv {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      img {
+        width: 48px;
+        height: 48px;
+      }
+    }
+    h4 {
+      font-weight: 500;
+      font-size: 30px;
+      color: #252525;
+      margin-left: 15px;
+    }
+    .p1 {
+      font-weight: 400;
+      font-size: 15px;
+      color: #252525;
+      span {
+        color: colors.$btn;
+        font-size: 16px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.card {
+  transition: all 0.5s;
+  background: #fafafa;
+  border: 1.3px solid #ebebeb;
+  border-radius: 5.45231px;
+  box-shadow: none;
+  padding: 30px;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.image1 {
+  height: 40px;
+  width: 40px;
+}

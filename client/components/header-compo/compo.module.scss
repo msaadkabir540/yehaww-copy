@@ -1,0 +1,37 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.mainHeader {
+  background-image: url(../../public/assets/icons/member.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-height: 181px;
+  height: 100%;
+  padding: 31px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h6 {
+    font-weight: 600;
+    font-size: 45px;
+    color: #ffffff;
+    @media (max-width: $tab) {
+      font-size: 30px;
+    }
+  }
+  p {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 10px;
+    span {
+      color: #ffffff;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}

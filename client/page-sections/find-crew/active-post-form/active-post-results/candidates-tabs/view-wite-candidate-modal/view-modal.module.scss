@@ -1,0 +1,27 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.field {
+  margin-top: 15px;
+}
+.modal {
+  p {
+    font-weight: 300;
+    font-size: 14px !important;
+    color: #252525;
+    margin-top: 15px !important;
+    width: 100% !important;
+    text-align: left !important;
+  }
+  .btnFlex {
+    margin-top: 30px;
+    .btn {
+      color: #c0c0c0;
+      border: 1px solid #c0c0c0 !important;
+      background-color: transparent !important;
+      margin-left: 20px;
+      max-width: 90px !important;
+    }
+  }
+}

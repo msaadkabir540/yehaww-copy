@@ -1,0 +1,141 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.buttonWrapper {
+  display: flex;
+  align-items: center;
+  .btnSave {
+    max-width: 90px !important;
+    margin-right: 10px;
+
+    .loaderClass {
+      border-color: rgb(255, 255, 255);
+      border-right: 2px solid transparent;
+      margin: auto;
+    }
+  }
+  .btnCancel {
+    color: colors.$btn;
+    max-width: 90px;
+    border: 1px solid colors.$btn;
+    background-color: transparent;
+  }
+}
+
+.docPreview {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  .img {
+    padding: 3px;
+    border: 1px solid #959595;
+    margin: 10px;
+    cursor: pointer;
+  }
+}
+
+.borderForm {
+  border: none !important;
+  background-color: transparent !important;
+  padding: 0px !important;
+  .gridTwo {
+    @include gridTwo(20, 30);
+    margin: 20px 0px;
+  }
+  .btnAdd {
+    width: 100%;
+    max-width: 180px;
+    margin-top: 25px;
+    color: colors.$btn;
+    background-color: transparent;
+    border: 2px solid colors.$btn;
+    margin-right: 10px;
+  }
+  .referenceNote {
+    font-weight: 400;
+    color: #2c2c2c;
+    font-size: 14px;
+    margin-top: 10px;
+    .boldText {
+      font-weight: 600;
+      font-size: 14px;
+    }
+  }
+  .tableWidth {
+    margin-top: 20px;
+    @media (max-width: 1410px) {
+      max-width: 1380px;
+      overflow-x: auto;
+    }
+    .widthClass {
+      @media (max-width: 1410px) {
+        width: 1390px;
+      }
+      .tableHead {
+        background: #ffffff;
+        border: 1px solid #ebebeb;
+        border-radius: 3px;
+        padding: 13px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p {
+          font-weight: 500;
+          font-size: 17px;
+          color: #252525;
+          text-align: center;
+        }
+      }
+      .tableBody {
+        .tableRow {
+          padding: 13px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border-bottom: 1px solid #ebebeb;
+          p {
+            font-weight: 400;
+            font-size: 14px;
+            color: #252525;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+          }
+          .img {
+            width: 28px;
+            height: 24px;
+            margin-left: 10px;
+            cursor: pointer;
+          }
+          .badgeWrapper {
+            margin: 0px !important;
+            background-color: #e07a17;
+            color: white !important;
+            text-align: center;
+            width: fit-content;
+          }
+          .verifiedBadge {
+            margin: 0px !important;
+            background-color: #17e024;
+            color: white !important;
+            text-align: center;
+            width: fit-content;
+          }
+          .deniedBadge {
+            margin: 0px !important;
+            background-color: #e02417;
+            color: white !important;
+            text-align: center;
+            width: fit-content;
+          }
+        }
+      }
+    }
+  }
+}
+.btnWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

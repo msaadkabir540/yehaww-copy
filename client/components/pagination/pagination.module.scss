@@ -1,0 +1,37 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.pagination_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  ul {
+    display: flex;
+    align-items: center;
+    background: #fafafa;
+    border: 1px solid #ebebeb;
+    border-radius: 5px;
+    overflow: hidden;
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #2c2c2c;
+      border-right: 1px solid #ebebeb;
+      padding: 3px 13px;
+      height: 100%;
+      cursor: pointer;
+      &:nth-last-child(1) {
+        border-right: none;
+      }
+    }
+  }
+}
+
+.active {
+  background: #b29e85;
+  color: white !important;
+  text-align: center;
+  border-right: none !important;
+}

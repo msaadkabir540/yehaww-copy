@@ -1,0 +1,39 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.jobPosition {
+  margin-top: 30px;
+  @include gridThree(30, 30);
+  height: 100%;
+  @media (max-width: breakpoints.$tab) {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 1720px;
+    overflow-x: auto;
+    padding-bottom: 30px;
+    &::-webkit-scrollbar:vertical {
+      width: 5px; /* Remove scrollbar space */
+      background: #e6e7e8; /* Optional: just make scrollbar invisible */
+      height: 5px;
+      border-radius: 8px;
+    }
+  }
+}
+.card {
+  height: 100%;
+  @media (max-width: breakpoints.$tab) {
+    width: 400px;
+  }
+}
+
+.tag {
+  width: 100% !important;
+  max-width: max-content !important;
+  background-color: #b29e85 !important;
+  margin-bottom: 6px !important;
+  @media (max-width: 1440px) {
+    margin-bottom: 0;
+  }
+}

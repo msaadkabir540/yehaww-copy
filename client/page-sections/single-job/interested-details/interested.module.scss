@@ -1,0 +1,32 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.rightDiv {
+  p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #2c2c2c;
+    margin-top: 10px;
+  }
+  button {
+    max-width: 150px;
+    margin-top: 20px;
+  }
+}
+
+.check {
+  height: 48px;
+  margin-left: 30px;
+  * {
+    color: #fff;
+  }
+}
+
+.loading {
+  border-color: colors.$btn !important;
+  border-right: 2px solid transparent !important;
+}
+.borderForm {
+  margin: 0px !important;
+}

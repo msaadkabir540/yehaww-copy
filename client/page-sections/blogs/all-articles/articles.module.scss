@@ -1,0 +1,145 @@
+@import "/styles/colors";
+@import "styles/breakpoints";
+@import "styles/mixin";
+
+.mainHeader {
+  margin-top: 30px;
+  .headerClass {
+    @include gridTwo(65, 65);
+    align-items: center;
+    .img {
+      height: 325px;
+      width: 100%;
+      cursor: pointer;
+      span {
+        width: 100% !important;
+        height: 100% !important;
+        img {
+          width: 100% !important;
+          height: 100% !important;
+        }
+      }
+    }
+    .rightDiv {
+      .flex {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        p {
+          font-weight: 600;
+          font-size: 15px;
+          color: #252525;
+        }
+        h5 {
+          font-weight: 600;
+          font-size: 19px;
+          color: #252525;
+        }
+        ul {
+          margin-left: 20px;
+          li {
+            list-style: disc;
+            line-height: 2;
+            padding: 5px 0;
+            font-weight: 500;
+            font-size: 15px;
+            color: #252525;
+          }
+        }
+        h6 {
+          font-weight: 600;
+          font-size: 19px;
+          color: #252525;
+        }
+      }
+      h6 {
+        font-weight: 600;
+        font-size: 22px;
+        letter-spacing: -0.322788px;
+        color: #252525;
+        margin-top: 10px;
+        cursor: pointer;
+      }
+      .p {
+        font-weight: 400;
+        font-size: 18px;
+        letter-spacing: -0.161394px;
+        color: #252525;
+        margin-top: 13px;
+      }
+    }
+  }
+  .grid {
+    @include gridTwo(30, 60);
+    margin-top: 30px;
+    border-bottom: 1px solid #dfe1e4;
+    padding-bottom: 50px;
+  }
+  .jobs {
+    margin-top: 60px;
+    .link {
+      cursor: pointer !important;
+    }
+    .jobsDiv {
+      display: flex;
+      align-items: center;
+      gap: 23px;
+      cursor: pointer;
+      width: max-content;
+      h6 {
+        font-weight: 700;
+        font-size: 43px;
+        letter-spacing: -0.645577px;
+        color: #252525;
+      }
+    }
+    .seeAll {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 16px;
+      margin-top: 10px;
+      border-bottom: 1px solid #dfe1e4;
+      padding-bottom: 26px;
+      p {
+        font-weight: 600;
+        font-size: 19px;
+        color: #b29e85;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 210px);
+}
+
+.seeAll {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+  p {
+    font-weight: 600;
+    font-size: 15px;
+    color: #b29e85;
+  }
+}
+
+.description {
+  .p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; // number of lines after which ellipsis should appear
+    -webkit-box-orient: vertical;
+    letter-spacing: 0.2px;
+    width: 98%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}

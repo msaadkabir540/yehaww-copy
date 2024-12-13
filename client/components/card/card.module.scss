@@ -1,0 +1,17 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.card_container {
+  filter: drop-shadow(0px 5.45231px 13.6308px rgba(0, 0, 0, 0.1));
+  position: relative;
+  background: #fafafa;
+  border: 1.36308px solid #ebebeb;
+  border-radius: 7px;
+
+  @media (max-width: breakpoints.$md) {
+    margin-top: 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-bottom: 2px solid #fafafa;
+  }
+}

@@ -1,0 +1,108 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.gridDiv {
+  .margin {
+    margin: 0px 40px;
+    @media (max-width: $xs) {
+      margin: 0px;
+    }
+    &:nth-last-child(1) {
+      .divider {
+        display: none;
+      }
+    }
+    .bgClass {
+      margin: 40px 0px;
+      background: #fafafa;
+      border: 1.29541px solid #ebebeb;
+      box-shadow: 0px 5.18165px 18.1358px 1.29541px rgba(0, 0, 0, 0.04);
+      border-radius: 7.77247px;
+      padding: 26px 36px;
+
+      .headingDivCard {
+        position: relative;
+        display: flex;
+        align-items: center;
+        .img {
+          height: 60px;
+          width: 60px;
+        }
+        h1 {
+          font-weight: 500;
+          font-size: 28px;
+          color: #000000;
+          margin-left: 22px;
+          @media (max-width: $xs) {
+            font-size: 22px;
+          }
+        }
+      }
+      .innerDiv {
+        p {
+          font-weight: 400;
+          font-size: 18px;
+          color: #777777;
+          margin-top: 15px;
+        }
+        ul {
+          li {
+            list-style: none;
+            font-weight: 400;
+            font-size: 17px;
+            color: #777777;
+            display: flex;
+            margin-top: 12px;
+            .img {
+              width: 20px;
+              height: 10px;
+              margin-right: 10px;
+            }
+          }
+        }
+        .btns {
+          display: flex;
+          align-items: center;
+          margin-top: 18px;
+          @media (max-width: $xs) {
+            flex-direction: column;
+          }
+          a {
+            @media (max-width: $xs) {
+              width: 100%;
+            }
+          }
+          .btn1 {
+            background-color: transparent;
+            border: 1px solid colors.$btn;
+            color: colors.$btn;
+            margin-right: 40px;
+            max-width: max-content;
+          }
+          .btn2 {
+            max-width: 150px;
+            @media (max-width: $xs) {
+              max-width: 100%;
+              margin-top: 15px;
+            }
+          }
+        }
+      }
+    }
+    .divider {
+      width: 100%;
+      border-bottom: 1px solid #e0e0e0;
+      text-align: center;
+      height: 15px;
+
+      span {
+        font-weight: 400;
+        font-size: 18px;
+        color: #777777;
+        padding: 0px 10px;
+        background-color: #fefefe;
+      }
+    }
+  }
+}

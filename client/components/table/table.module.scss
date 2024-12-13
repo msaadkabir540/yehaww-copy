@@ -1,0 +1,190 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.tableWrapper {
+  overflow-x: overlay;
+  position: relative;
+  flex: 1;
+  text-transform: capitalize;
+  background: #ffffff;
+  width: -webkit-fill-available;
+
+  &::-webkit-scrollbar {
+    width: 0px !important;
+    background: #e6e7e8 !important;
+    border-radius: 8px !important;
+    display: block !important;
+    height: 0px;
+  }
+
+  .table {
+    border-collapse: collapse;
+    width: 100%;
+    height: calc(100vh - 540px);
+    overflow-y: auto;
+    min-width: 1200px;
+
+    @media (max-width: 1200px) {
+      max-width: 1000px;
+      min-width: 1000px;
+    }
+
+    @media (max-width: 900px) {
+      max-width: 800px;
+      min-width: 800px;
+    }
+
+    @media (max-width: 780px) {
+      max-width: 500px;
+      min-width: 500px;
+    }
+
+    @media (max-width: 500px) {
+      min-width: 350px;
+      max-width: 350px;
+    }
+
+    // @media (max-width: 380px) {
+    //   max-width: 300px;
+    //   min-width: 300px;
+    // }
+
+    &::-webkit-scrollbar {
+      width: 0px !important;
+      background: #e6e7e8 !important;
+      border-radius: 8px !important;
+      display: block !important;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #c7c8ca;
+      border-radius: 8px;
+    }
+
+    &::-webkit-scrollbar:vertical {
+      width: 0px !important;
+      /* Remove scrollbar space */
+      background: #e6e7e8;
+      /* Optional: just make scrollbar invisible */
+      height: 5px;
+      border-radius: 8px;
+    }
+
+    .thead {
+      // position: sticky;
+      // top: 0;
+      display: flex;
+      height: 51px;
+
+      .heading {
+        padding: 25px 10px;
+        position: relative;
+        background-color: #ffffff;
+        width: 100%;
+        border-bottom: 1px solid #c9c7c7;
+
+        .headingTitle {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+          color: #9ea0a5;
+
+          @media (max-width: $md) {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.nodataDiv {
+  margin-top: 40px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+  .nodata {
+    font-size: 17px;
+    position: fixed;
+    color: #5e5e5e;
+  }
+}
+
+.tr {
+  width: 100%;
+  // border-top: 1px solid #c9c7c7;
+  box-shadow: 0px 4px 35px rgba(58, 65, 89, 0.04);
+  margin-top: 7px;
+
+  p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #121413;
+  }
+
+  // &:hover {
+  //   background: rgba(64, 134, 221, 0.05);
+  // }
+}
+
+.table {
+  width: 100%;
+}
+
+.red,
+.green,
+.cash {
+  display: flex;
+  justify-content: center;
+
+  p {
+    background-color: #f0f1ff;
+    cursor: pointer;
+    padding: 10px !important;
+    border-radius: 7px;
+    width: 50px;
+  }
+}
+
+.iconsDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+}
+
+.btnSignUp {
+  background: #e0e0e0;
+  border-color: #e0e0e0;
+  color: #2c2c2c;
+  font-weight: 500 !important;
+
+  &:hover {
+    background: #2c2c2c;
+    border-color: #2c2c2c;
+    color: #e0e0e0;
+  }
+}
+
+.btnViewProfile {
+  background: #4086dd;
+  border-color: #4086dd;
+  color: #fff;
+  font-weight: 500 !important;
+
+  &:hover {
+    background: #2c2c2c !important;
+    border-color: #2c2c2c !important;
+    color: #e0e0e0;
+  }
+}

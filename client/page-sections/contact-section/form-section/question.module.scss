@@ -1,0 +1,72 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.main {
+  h6 {
+    font-weight: 600;
+    font-size: 20px;
+    color: #252525;
+    display: flex;
+    align-items: center;
+    span {
+      text-decoration: underline;
+      color: colors.$btn;
+      cursor: pointer;
+      display: block;
+      margin-left: 5px;
+      &:hover {
+        color: #959595;
+      }
+    }
+  }
+
+  .p {
+    color: #2c2c2c;
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 5px;
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 20px;
+  }
+  .field {
+    margin-top: 17px;
+  }
+  .grid {
+    @include gridTwo(17, 20);
+    // margin-top: 20px;
+  }
+  .flex {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    @media (max-width: $xs) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    p {
+      font-weight: 500;
+      font-size: 14px;
+      color: #252525;
+      margin-left: 10px;
+      @media (max-width: $xs) {
+        margin-top: 10px;
+        margin-left: 0px;
+      }
+      a {
+        color: colors.$btn;
+        text-decoration: underline;
+        cursor: pointer;
+        &:hover {
+          color: #252525;
+        }
+      }
+    }
+  }
+}
+
+.loaderClass {
+  border-color: rgb(255, 255, 255);
+  border-right: 2px solid transparent;
+  margin: auto;
+}

@@ -1,0 +1,149 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.cancelModal {
+  max-width: 975px !important;
+  padding: 20px !important;
+
+  & > div {
+    border: none !important;
+    img {
+      width: 100% !important;
+    }
+  }
+}
+
+.emojiFlex {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  align-self: stretch;
+  p {
+    color: var(--fonts-font-a-primary, #252525);
+    font-family: Poppins;
+    font-size: var(--Font-Sizes-Scale-1, 18px);
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+}
+
+.restrictions {
+  padding: 10px;
+  color: red;
+  .li {
+    color: var(--Fail, #d40c18);
+    font-family: Poppins;
+    font-size: var(--Font-Sizes-Scale--1, 14px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+.optionButton {
+  max-width: max-content !important;
+  border-radius: 3px;
+  border: 1px solid var(--primary, #b29e85);
+  background: transparent;
+  padding: 10px;
+  color: var(--primary, #b29e85);
+  font-family: "Poppins", sans-serif;
+  font-size: var(--Font-Sizes-Scale--1, 14px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: none;
+  width: max-content;
+  letter-spacing: normal;
+  &:hover {
+    background-color: colors.$btn;
+    border: 1px solid transparent;
+    color: colors.$white;
+  }
+}
+.activeBtn {
+  max-width: max-content !important;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  background: #b29e85;
+  padding: 10px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: var(--Font-Sizes-Scale--1, 14px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: none;
+  width: max-content;
+  letter-spacing: normal;
+  &:hover {
+    background-color: colors.$btn;
+    border: 1px solid transparent;
+    color: colors.$white;
+  }
+}
+
+.titleClass {
+  color: var(--fonts-font-a-primary, #252525);
+  font-family: Poppins !important;
+  font-size: var(--Font-Sizes-Scale-3, 24px) !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  line-height: normal !important;
+}
+
+.btnFlex {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 5px;
+}
+
+.label {
+  color: var(--fonts-font-a-primary, #252525);
+  padding: 15px 0px !important;
+  font-family: Poppins;
+  font-size: var(--Font-Sizes-Scale-0, 16px);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.input {
+  label {
+    color: var(--fonts-font-a-primary, #252525) !important;
+    padding: 15px 0px !important;
+    font-family: Poppins !important;
+    font-size: var(--Font-Sizes-Scale-0, 16px) !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    line-height: normal !important;
+  }
+}
+
+.contactDiv {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.errorMessage {
+  margin-top: -3px;
+  position: absolute;
+  display: block;
+  font-size: 11px;
+  color: #ff5050;
+}
+
+.footer {
+  display: flex;
+  padding-top: 20px;
+  justify-content: space-between;
+}
+
+.loaderClass {
+  border-color: rgb(255, 255, 255);
+  border-right: 2px solid transparent;
+  margin: auto;
+}

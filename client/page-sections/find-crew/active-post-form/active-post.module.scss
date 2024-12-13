@@ -1,0 +1,60 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.gridSection {
+  margin: 30px 0px;
+}
+.left {
+  @include gridThree(20, 20);
+  .card {
+    height: 100%;
+  }
+}
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: -100px;
+  @media (max-width: 768px) {
+    margin-top: 0;
+  }
+  p {
+    font-weight: 500;
+    font-size: 14px;
+    color: #252525;
+    margin-right: 10px;
+  }
+  .select {
+    width: 145px !important;
+  }
+}
+
+.videoMain {
+  margin-top: 30px;
+  border-bottom: 2px solid #fafafa;
+  .listWrapper {
+    box-shadow: none;
+    background-color: transparent;
+    img {
+      height: 115px;
+      width: 120px;
+    }
+  }
+  .tag {
+    background-color: #aeaeae !important;
+    margin-left: 10px;
+    text-transform: uppercase;
+  }
+  .btn {
+    flex-direction: column;
+    a {
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+}
+
+.viewCandidate {
+  max-width: 100% !important;
+}

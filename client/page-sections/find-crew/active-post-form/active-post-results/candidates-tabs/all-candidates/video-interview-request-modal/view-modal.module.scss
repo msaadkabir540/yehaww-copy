@@ -1,0 +1,100 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.field {
+  margin-top: 15px;
+}
+.modal {
+  p {
+    font-weight: 300;
+    font-size: 14px !important;
+    color: #252525;
+    margin-top: 15px !important;
+    width: 100% !important;
+    text-align: left !important;
+  }
+  .btnFlex {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    button {
+      max-width: 220px;
+    }
+    .btn {
+      color: #c0c0c0;
+      border: 1px solid #c0c0c0 !important;
+      background-color: transparent !important;
+      margin-left: 20px;
+      max-width: 90px !important;
+    }
+  }
+}
+.borderWrapper {
+  padding: 15px !important;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  background-color: transparent !important;
+}
+.innerFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ebebeb;
+  padding: 20px 0px;
+  &:last-child {
+    border-bottom: none;
+  }
+  p {
+    font-weight: 400 !important;
+    font-size: 13px !important;
+    color: #252525 !important;
+    margin-top: 0px !important;
+  }
+  .icon1 {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    font-size: 20px;
+    margin-left: 10px;
+    * {
+      color: colors.$btn;
+      height: 20px;
+      width: 20px;
+      font-size: 20px;
+    }
+  }
+}
+.flex1 {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  margin-top: 10px;
+  @media (max-width: breakpoints.$tab) {
+    flex-direction: column;
+  }
+  .input {
+    width: 100%;
+    margin-right: 20px;
+    @media (max-width: breakpoints.$tab) {
+      margin-right: 0px;
+    }
+  }
+  .addBtn {
+    background-color: transparent;
+    border: 1px solid colors.$btn;
+    color: colors.$btn;
+    max-width: 155px;
+    height: 45px;
+    @media (max-width: breakpoints.$tab) {
+      margin-top: 10px;
+    }
+  }
+}
+
+.heading {
+  font-weight: 600 !important;
+  font-size: 17px;
+  color: #252525;
+  margin-top: 20px;
+}

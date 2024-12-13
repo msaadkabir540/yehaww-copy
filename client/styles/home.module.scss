@@ -1,0 +1,23 @@
+@import "./colors.scss";
+@import "./breakpoints";
+@import "./mixin.scss";
+
+.home {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+.home::after {
+  content: "";
+  background: url("/assets/horses-in-barn.webp");
+  top: 0;
+  left: 0;
+  background-size: cover;
+  bottom: 0;
+  background-repeat: no-repeat;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+  background-position: center;
+}

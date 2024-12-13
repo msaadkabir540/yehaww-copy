@@ -1,0 +1,36 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.modal {
+  max-width: 750px !important;
+  padding: 0px !important;
+  .bold {
+    font-weight: 800;
+    font-weight: 600;
+    font-size: 25px;
+    color: #252525;
+    border-bottom: 1px solid #ebebeb;
+    padding: 20px;
+  }
+  .bodyDiv {
+    padding: 20px;
+    .p {
+      font-weight: 300;
+      font-size: 14px;
+      color: #252525;
+    }
+    .btnDiv {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-top: 20px;
+      .cancel {
+        margin-right: 10px;
+        border: 1px solid #c0c0c0;
+        color: #c0c0c0;
+        background-color: transparent;
+      }
+    }
+  }
+}

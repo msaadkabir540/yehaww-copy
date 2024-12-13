@@ -1,0 +1,33 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.rightDiv {
+  h6 {
+    font-weight: 500;
+    font-size: 30px;
+    color: #252525;
+    @media (max-width: breakpoints.$tab) {
+      font-size: 22px;
+    }
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.025em;
+    color: #777777;
+    margin-top: 10px;
+    @media (max-width: breakpoints.$tab) {
+      font-size: 16px;
+    }
+  }
+  .link {
+    max-width: 200px;
+    width: 100%;
+    button {
+      margin-top: 25px;
+      max-width: 160px;
+    }
+  }
+}

@@ -1,0 +1,87 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.form_container {
+  position: relative;
+  background: #fafafa;
+  border: 1.3px solid #ebebeb;
+  border-radius: 6px;
+  padding: 20px 40px;
+  margin-bottom: 20px;
+  .form_title {
+    font-weight: 600;
+    font-size: 20px;
+    color: #252525;
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 19px;
+    span {
+      color: colors.$btn;
+      text-decoration: underline;
+      cursor: pointer;
+      &:hover {
+        color: #959595;
+      }
+    }
+  }
+  .name_field {
+    @include gridTwo(30, 30);
+  }
+
+  .checkboxDiv {
+    margin-top: 30px;
+    .checkbox {
+      display: flex;
+      align-items: center;
+      margin-top: 15px;
+    }
+    p {
+      font-size: 14px;
+      margin-top: 5px;
+      span {
+        color: colors.$btn;
+        text-decoration: underline;
+        cursor: pointer;
+        margin: 0px 5px;
+        &:hover {
+          color: #959595;
+        }
+      }
+    }
+  }
+  .btnSearch {
+    max-width: 130px;
+    margin-top: 25px;
+  }
+}
+
+.searchSelect {
+  padding-top: 20px;
+}
+
+.footerHide {
+  display: none !important;
+}
+
+.headingDiv {
+  position: relative;
+  padding: 30px 0px;
+  h1 {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 17px;
+    color: #b29e85;
+    span {
+      font-weight: 500;
+      font-size: 17px;
+      color: #c0c0c0;
+    }
+    .arrow_icon {
+      height: 12px;
+      width: 12px;
+      margin: 0px 10px;
+      display: flex;
+    }
+  }
+}

@@ -1,0 +1,77 @@
+@import "./colors.scss";
+@import "./breakpoints";
+@import "./mixin.scss";
+
+.loginMain {
+  min-height: calc(100vh - 197px);
+
+  .formClass {
+    margin: 30px 0px;
+    background: #fafafa;
+    border: 1.36308px solid #ebebeb;
+    border-radius: 5.45231px;
+    padding: 20px 40px;
+    .loginPara {
+      font-weight: 600;
+      font-size: 20px;
+      color: #252525;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #ebebeb;
+      span {
+        color: $btn;
+        text-decoration: underline;
+        cursor: pointer;
+        &:hover {
+          color: #959595;
+        }
+      }
+    }
+    .gridDiv {
+      @include gridTwo(20, 20);
+      margin-top: 20px;
+    }
+    .btnDiv {
+      display: flex;
+      margin-top: 40px;
+      justify-content: flex-start;
+      align-content: center;
+      align-items: center;
+      gap: 15px;
+      @media (max-width: $tab) {
+        flex-direction: column;
+      }
+      button {
+        @media (max-width: $tab) {
+          max-width: none !important;
+        }
+      }
+    }
+  }
+  .socialBtn {
+    max-width: max-content;
+    background-color: transparent;
+    border: 1px solid #b29e85;
+    color: #252525;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+    span {
+      margin-top: 6px !important;
+    }
+    @media (max-width: $tab) {
+      display: flex !important;
+      justify-content: center !important;
+    }
+  }
+}
+
+.btnLoader {
+  margin: auto;
+  border-top: 2px solid #f7f8f8 !important;
+  border-left: 2px solid #f7f8f8 !important;
+  border-right: 2px solid transparent;
+  border-bottom: 2px solid #f7f8f8;
+}

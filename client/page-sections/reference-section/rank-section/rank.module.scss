@@ -1,0 +1,69 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.form_container {
+  position: relative;
+  margin-top: 40px;
+  border: 1px solid #959595;
+  padding: 30px;
+  .form_title {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 40px 0 -10px;
+    padding: 0 10px;
+    position: absolute;
+    left: 18px;
+    top: -10px;
+    background-color: white;
+  }
+}
+
+.grid {
+  @include gridTwo(20, 30);
+  margin: 20px 0px;
+  .borderDiv {
+    border: 1px solid #959595;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0px !important;
+    p {
+      font-size: 14px;
+      color: #2c2c22;
+      margin-bottom: 20px;
+    }
+  }
+}
+.borderForm {
+  margin: 0px !important;
+}
+.card {
+  background: #ffffff;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  padding: 22px 40px;
+  .h1 {
+    font-weight: 500;
+    font-size: 16px;
+    color: #252525;
+  }
+  .flex {
+    border-top: 1px solid #ebebeb;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    .p2 {
+      font-weight: 400;
+      font-size: 14px;
+      color: #252525;
+    }
+  }
+  .p1 {
+    font-weight: 400;
+    font-size: 14px;
+    color: #252525;
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,147 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.listWrapper {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  border-bottom: 1px solid rgba(44, 44, 44, 0.2);
+  margin-bottom: 30px;
+  padding: 25px 0px;
+  @media (max-width: breakpoints.$tab) {
+    flex-wrap: wrap;
+  }
+  &:hover {
+    cursor: pointer;
+    .actionWrapper {
+      visibility: visible !important;
+      span {
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+  }
+  .contentWrapper {
+    width: 100%;
+    .infoWrapper {
+      display: flex;
+      h3 {
+        font-size: 16px;
+      }
+      .badgeWrapper {
+        margin: 0px 5px !important;
+      }
+    }
+    .detailWrapper {
+      padding: 10px 0px;
+      span {
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+    .actionWrapper {
+      visibility: hidden;
+      @media (max-width: breakpoints.$tab) {
+        visibility: visible;
+      }
+      span {
+        font-size: 14px;
+        font-weight: 400;
+        &:hover {
+          color: #959595 !important;
+        }
+      }
+      .btnDelete {
+        color: #c74c49;
+        padding-left: 5px;
+        border-left: 1px solid gray;
+      }
+      .btnEdit {
+        padding-right: 5px;
+        color: #4086dd;
+      }
+      .btnView {
+        color: #4086dd;
+        padding-right: 5px;
+        margin-right: 5px;
+        border-right: 1px solid gray;
+      }
+    }
+  }
+}
+.btnWrapper {
+  margin: 0px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: breakpoints.$tab) {
+    margin: 0px;
+  }
+  .btnEdit {
+    width: 100%;
+    min-width: 90px !important;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 2px;
+    @media (max-width: breakpoints.$tab) {
+      margin-bottom: 0;
+      margin-right: 4px;
+    }
+  }
+}
+
+.borderForm {
+  border: none !important;
+  background-color: transparent !important;
+  padding: 0px !important;
+  .tableWidth {
+    margin-top: 20px;
+    @media (max-width: 1410px) {
+      max-width: 1380px;
+      overflow-x: auto;
+    }
+    .widthClass {
+      @media (max-width: 1410px) {
+        width: 1390px;
+      }
+      .tableHead {
+        background: #ffffff;
+        border: 1px solid #ebebeb;
+        border-radius: 3px;
+        padding: 13px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p {
+          font-weight: 500;
+          font-size: 17px;
+          color: #252525;
+          text-align: center;
+        }
+      }
+      .tableBody {
+        .tableRow {
+          padding: 13px;
+          display: flex;
+          align-items: center;
+          border-bottom: 1px solid #ebebeb;
+          justify-content: space-between;
+          p {
+            font-weight: 400;
+            font-size: 14px;
+            color: #252525;
+            text-align: center;
+          }
+          .img {
+            width: 28px;
+            height: 24px;
+            display: flex;
+            margin-left: 10px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

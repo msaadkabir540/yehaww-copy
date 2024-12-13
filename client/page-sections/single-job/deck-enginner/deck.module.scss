@@ -1,0 +1,61 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.mainSection {
+  display: flex;
+  align-items: center;
+  @media (max-width: breakpoints.$tab) {
+    flex-direction: column;
+  }
+  .img {
+    width: 200px;
+    height: 197px;
+    border-radius: 5px;
+    object-fit: fill;
+  }
+  .right {
+    margin-left: 24px;
+    @media (max-width: breakpoints.$tab) {
+      margin-top: 20px;
+      margin-left: 0px;
+    }
+    h4 {
+      font-weight: 500;
+      font-size: 22px;
+      color: #252525;
+      @media (max-width: breakpoints.$tab) {
+        text-align: center;
+      }
+    }
+
+    .btnDiv {
+      @media (max-width: breakpoints.$tab) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      button {
+        height: 50px !important;
+        max-width: 247px;
+        margin-top: 15px;
+      }
+    }
+    & div {
+      p {
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        font-size: 15px;
+        color: #252525;
+        margin-top: 10px;
+        span {
+          font-weight: 400;
+          font-size: 15px;
+          color: #252525;
+          width: 105px;
+        }
+      }
+    }
+  }
+}

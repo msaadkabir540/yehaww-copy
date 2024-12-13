@@ -1,0 +1,217 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.mainNav {
+  background-color: #ffffff;
+
+  .saleBannerClass {
+    padding: 10px;
+    background: #000;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+
+    @media (max-width: 500px) {
+      font-size: 13px;
+    }
+
+    span {
+      color: #FFF;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 1.8px !important;
+
+      @media (max-width: 500px) {
+        font-size: 14px;
+      }
+    }
+
+  }
+
+  @media (max-width: 1260px) {
+    padding-top: 10px;
+  }
+
+  .innerDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: breakpoints.$md) {
+      padding: 7px 0;
+    }
+
+    .leftDiv {
+      display: flex;
+      align-items: center;
+
+      @media (max-width: 1260px) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .img {
+        cursor: pointer;
+        height: 50px;
+        max-width: 218px !important;
+
+        @media (max-width: breakpoints.$xs) {
+          height: 30px !important;
+        }
+      }
+    }
+
+    .innerLinks {
+      display: flex;
+      align-items: center;
+      margin-left: 40px;
+
+      @media (max-width: 1260px) {
+        display: none;
+      }
+    }
+
+    .rightDiv {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      max-width: 270px;
+      width: 100%;
+
+      // @media (max-width: breakpoints.$xxs) {
+      //   flex-direction: column;
+      //   align-items: flex-end;
+      // }
+      .loginHomeBtn {
+        color: #b29e85;
+        border: 1px solid #b29e85;
+        border-radius: 5px;
+        background-color: transparent;
+
+        &:hover {
+          background-color: #b29e85;
+          color: #ffffff;
+        }
+
+        @media (max-width: breakpoints.$xxs) {
+          border: none;
+        }
+      }
+
+      .signUpHomeBtn {
+        max-width: 150px;
+        margin-left: 10px;
+
+        @media (max-width: breakpoints.$xxs) {
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+}
+
+.active {
+  border-bottom: 2px solid #b29e85;
+  color: #b29e85 !important;
+}
+
+.home_nav {
+  margin-right: 40px;
+  padding: 25px 0px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #252525;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+
+  &:hover {
+    border-bottom: 2px solid #b29e85;
+  }
+
+  @media (max-width: 1260px) {
+    padding: 15px 0px;
+    margin-right: 20px;
+  }
+
+  @media (max-width: 475px) {
+    font-size: 13px;
+    margin-right: 11px;
+    font-weight: 600;
+  }
+}
+
+.innerLinksSmall {
+  display: none;
+
+  @media (max-width: 1260px) {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+
+.navbarLogin {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  .innerDiv {
+    display: flex;
+    align-items: center;
+
+    img {
+      height: 35px;
+      width: 35px;
+      margin-left: 0px;
+      object-fit: cover;
+    }
+
+    h6 {
+      margin-left: 15px;
+      color: #b29e85;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    p {
+      color: #2c2c2c;
+      margin-left: 15px;
+      font-weight: 400;
+      margin-top: 4px;
+      font-size: 13px;
+    }
+  }
+
+  .arrowImg {
+    height: 15px;
+    width: 15px;
+    margin-left: 40px;
+
+    @media (max-width: breakpoints.$xs) {
+      margin: 20px 0 0 10px;
+    }
+  }
+}
+
+.loginClassLink {
+  @media (max-width: breakpoints.$xxs) {
+    width: 100%;
+    max-width: 72px;
+  }
+}
+
+.morepopup {
+  position: absolute;
+  transition: all 1.5s;
+  z-index: 2600;
+  width: 400px;
+  right: 28%;
+}

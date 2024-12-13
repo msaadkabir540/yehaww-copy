@@ -1,0 +1,86 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.resetModalMain {
+  .resetModalHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h5 {
+      font-size: 18px;
+    }
+    img {
+      width: 20px;
+      cursor: pointer;
+    }
+  }
+  .resetModalBody {
+    margin-top: 20px;
+    .email {
+      margin-bottom: 15px;
+    }
+    .submitDiv {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 25px;
+      .button {
+        width: 500px;
+        max-width: 500px;
+      }
+    }
+  }
+}
+
+.forgetPassModalMain {
+  .forgetPassModalHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h5 {
+      font-size: 18px;
+    }
+  }
+  .forgetPassModalBody {
+    margin-top: 20px;
+    .email {
+    }
+    .submitDiv {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 25px;
+      .button {
+        width: 500px;
+        max-width: 500px;
+      }
+    }
+  }
+}
+
+.errorMessage {
+  position: initial !important;
+}
+
+.rightDiv {
+  p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #2c2c2c;
+    margin-top: 10px;
+  }
+  button {
+    max-width: 150px;
+    margin-top: 20px;
+  }
+}
+.loading {
+  border-color: colors.$btn !important;
+  border-right: 2px solid transparent !important;
+}
+
+.img {
+  width: 20px;
+  cursor: pointer;
+}

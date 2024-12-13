@@ -1,0 +1,19 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.container {
+  max-width: 1820px;
+  margin: 0 auto;
+  padding: 0 50px;
+  position: relative;
+  @media (max-width: breakpoints.$tab) {
+    padding: 0 30px;
+  }
+  @media (max-width: breakpoints.$xs) {
+    padding: 0 10px;
+  }
+  @media (max-width: 380px) {
+    padding: 0 7px;
+  }
+}

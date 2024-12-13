@@ -1,0 +1,53 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.modal {
+  p {
+    font-weight: 400;
+    font-size: 18px !important;
+    color: #0e0e0e;
+    margin-top: 15px !important;
+    width: 100% !important;
+    text-align: left !important;
+  }
+}
+
+.crossIcon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.heading {
+  font-weight: 600 !important;
+  font-size: 18px;
+  color: #252525;
+  margin-top: 20px;
+}
+
+.list {
+  margin-top: 20px;
+  ul {
+    color: #0e0e0e;
+    margin-left: 8px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+
+.noticeModal {
+  max-width: 858px !important;
+  padding: 30px !important;
+}
+
+.noticeDiv {
+  display: flex;
+  justify-content: center;
+  span {
+    font-size: 32px;
+    font-weight: 500;
+    color: #d40c18;
+  }
+}

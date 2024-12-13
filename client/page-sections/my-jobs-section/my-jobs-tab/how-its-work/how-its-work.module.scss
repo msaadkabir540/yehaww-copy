@@ -1,0 +1,107 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.parent {
+  padding: 30px;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0px auto;
+  h2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;
+    color: #252525;
+  }
+
+  @media (max-width: $tab) {
+    padding: 20px;
+  }
+  @media (max-width: $xs) {
+    padding: 10px;
+  }
+}
+
+// timeline
+
+.timeline {
+  overflow: visible;
+  margin-top: 30px;
+  .innerClass {
+    &:nth-last-child(1) {
+      .entry:before {
+        border: none;
+      }
+    }
+  }
+  .img_sec {
+    .img {
+      width: 173px;
+      height: 159px;
+    }
+    @media (max-width: $md) {
+      display: none;
+    }
+  }
+}
+
+.entry {
+  margin-left: 130px;
+  position: relative;
+  padding-left: 130px;
+  border-radius: 5px;
+  overflow: visible;
+  @media (max-width: $md) {
+    margin-left: 10px;
+    padding-left: 40px;
+  }
+
+  .details_sec {
+    span {
+      font-weight: 600;
+      font-size: 25px;
+      color: #252525;
+    }
+    .p1 {
+      font-weight: 600;
+      font-size: 18px;
+      color: #252525;
+      margin-top: 10px;
+    }
+    .p2 {
+      font-weight: 400;
+      font-size: 18px;
+      color: #252525;
+      margin-top: 10px;
+      padding-bottom: 90px;
+    }
+  }
+}
+
+.entry:before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 110%;
+  display: block;
+  border-radius: 0px;
+  border: 1px dashed #c0c0c0;
+  left: 0px;
+}
+
+.circle:before {
+  content: attr(data-index);
+  display: block;
+  position: absolute;
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  background: colors.$btn;
+  top: 0px;
+  left: -20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  color: #ffffff;
+}

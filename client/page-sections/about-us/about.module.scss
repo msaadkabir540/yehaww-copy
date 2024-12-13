@@ -1,0 +1,8 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.headerParent {
+  margin: 30px 0px;
+  min-height: calc(100vh - 678px);
+}

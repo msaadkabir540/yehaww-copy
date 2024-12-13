@@ -1,0 +1,158 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.positionForm {
+  padding-bottom: 20px;
+  .borderForm {
+    background-color: transparent !important;
+    border: none !important;
+    padding: 0px !important;
+    margin: 23px 0px 23px 0px !important;
+  }
+}
+.gridTwo {
+  @include gridTwo(20, 30);
+  margin: 20px 0px;
+}
+.gridThree {
+  @include gridThree(20, 30);
+  margin: 20px 0px;
+}
+.h6 {
+  font-weight: 600;
+  font-size: 16px;
+  color: #000000;
+  margin: 20px 0px;
+}
+.btn {
+  border: 1px solid #b29e85 !important;
+  color: #b29e85 !important;
+  background-color: transparent !important;
+  max-width: fit-content !important;
+  margin: 20px 20px 0 0;
+}
+.para {
+  color: #2c2c2c;
+  font-size: 14px;
+  font-weight: 300;
+  margin: 20px 0px;
+}
+.selectBox1 {
+  margin-top: 20px;
+}
+.label {
+  font-weight: 600;
+  font-size: 15px;
+  color: #252525;
+  position: relative;
+}
+.visa_sec {
+  margin-top: 10px;
+}
+.btnSec {
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+}
+
+.minInput {
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+.errorMessage {
+  font-size: 12px;
+  color: #ff5050;
+  margin-top: 17px;
+  position: absolute;
+}
+.gridFour {
+  @include gridFour(25, 15);
+  margin-top: 20px;
+}
+.btnContainer {
+  display: flex;
+  margin: 30px 0px;
+  .btnPassport1 {
+    max-width: 170px;
+    margin-right: 10px;
+  }
+}
+
+.uploadedImg {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+}
+
+.defaultImg {
+  height: 130px;
+}
+
+.positionText {
+  margin: 20px 0 20px 0;
+  font-size: 12px;
+}
+
+.positionTextSub {
+  margin: 5px 0 20px 0;
+  font-size: 12px;
+}
+
+.imageContainer {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  @media (max-width: breakpoints.$tab) {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .input {
+    width: 100%;
+  }
+  .btnBtn {
+    max-width: 175px !important;
+    width: 100%;
+    margin-top: 30px;
+    @media (max-width: breakpoints.$tab) {
+      margin-top: 5px;
+    }
+  }
+}
+.deleteBtn {
+  max-width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  &:hover {
+    background-color: #b29e85 !important;
+    color: #fff !important;
+  }
+}
+
+.draftBtn {
+  max-width: 135px;
+}
+
+.salaryBanner {
+  display: flex;
+  margin-top: 20px;
+  padding: 6px 20px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+
+  border-radius: var(--Num-XXS, 3px);
+  background: rgba(212, 12, 24, 0.1);
+  p {
+    color: #d40c18;
+    font-size: 14px;
+  }
+
+  span {
+    color: #0c2ed4;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}

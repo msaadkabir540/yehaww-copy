@@ -1,0 +1,37 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.rightDiv {
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  padding: 20px 29px;
+  @media (max-width: breakpoints.$xs) {
+    padding: 15px 12px;
+  }
+  .headerInnerDiv {
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 15px;
+    h6 {
+      font-weight: 600;
+      font-size: 18px;
+      color: #252525;
+    }
+  }
+
+  .ul {
+    li {
+      position: relative;
+      list-style: none;
+      font-weight: 400;
+      font-size: 14px;
+      color: #252525;
+      border-bottom: 1px solid #ebebeb;
+      padding: 14px 0px;
+      &:last-child {
+        border-bottom: none;
+        padding-bottom: 0px;
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.cOption {
+  display: flex;
+  img {
+    width: 30px;
+    margin-right: 10px;
+  }
+}
+
+.icon {
+  position: absolute;
+  right: 12px;
+  cursor: pointer;
+}
+
+.label {
+  font-weight: 600;
+  font-size: 14px;
+  color: #2c2c2c;
+}
+
+.errorHead {
+  color: #ff5050;
+}
+
+.errorMessage {
+  display: block;
+  font-size: 12px;
+  bottom: -18px;
+  color: #ff5050;
+}
+
+.select option:first-child {
+  color: #959595 !important;
+}
+
+.select {
+  color: #0e0e0e !important;
+}

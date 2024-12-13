@@ -1,0 +1,29 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.main {
+  margin-bottom: 30px;
+  h1 {
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.025em;
+    color: #777777;
+    margin-top: 10px;
+    @media (max-width: breakpoints.$tab) {
+      font-size: 16px;
+    }
+  }
+  .b {
+    text-decoration: underline;
+    color: #777777;
+    cursor: pointer;
+    &:hover {
+      color: #252525;
+    }
+  }
+}
+.hover {
+  text-decoration: underline;
+  color: #777777;
+}

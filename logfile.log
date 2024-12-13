@@ -1,0 +1,1790 @@
+{
+  error: Error: listen EADDRINUSE: address already in use :::8080
+      at Server.setupListenHandle [as _listen2] (node:net:1912:16)
+      at listenInCluster (node:net:1969:12)
+      at Server.listen (node:net:2074:7)
+      at /Users/mac/Desktop/projects/yehaww/index.js:44:10
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+    code: 'EADDRINUSE',
+    errno: -48,
+    syscall: 'listen',
+    address: '::',
+    port: 8080
+  },
+  level: 'error',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::8080\n' +
+    'Error: listen EADDRINUSE: address already in use :::8080\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1912:16)\n' +
+    '    at listenInCluster (node:net:1969:12)\n' +
+    '    at Server.listen (node:net:2074:7)\n' +
+    '    at /Users/mac/Desktop/projects/yehaww/index.js:44:10\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)',
+  stack: 'Error: listen EADDRINUSE: address already in use :::8080\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1912:16)\n' +
+    '    at listenInCluster (node:net:1969:12)\n' +
+    '    at Server.listen (node:net:2074:7)\n' +
+    '    at /Users/mac/Desktop/projects/yehaww/index.js:44:10\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)',
+  exception: true,
+  date: 'Thu Nov 28 2024 17:57:47 GMT+0500 (Pakistan Standard Time)',
+  process: {
+    pid: 89129,
+    uid: 501,
+    gid: 20,
+    cwd: '/Users/mac/Desktop/projects/yehaww',
+    execPath: '/usr/local/Cellar/node/23.1.0_1/bin/node',
+    version: 'v23.1.0',
+    argv: [
+      '/usr/local/Cellar/node/23.1.0_1/bin/node',
+      '/Users/mac/Desktop/projects/yehaww/index.js'
+    ],
+    memoryUsage: {
+      rss: 263184384,
+      heapTotal: 153038848,
+      heapUsed: 124058392,
+      external: 21727816,
+      arrayBuffers: 18333237
+    }
+  },
+  os: { loadavg: [ 1.9111328125, 3.55029296875, 3.90625 ], uptime: 631676 },
+  trace: [
+    {
+      column: 16,
+      file: 'node:net',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1912,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:net',
+      function: 'listenInCluster',
+      line: 1969,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:net',
+      function: 'Server.listen',
+      line: 2074,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 10,
+      file: '/Users/mac/Desktop/projects/yehaww/index.js',
+      function: null,
+      line: 44,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: 'node:internal/process/task_queues',
+      function: 'process.processTicksAndRejections',
+      line: 105,
+      method: 'processTicksAndRejections',
+      native: false
+    }
+  ]
+}
+{
+  error: /Users/mac/Desktop/projects/yehaww/controllers/subscription/index.js:54
+      line_items: [{ price: lookup_key, quantity: 1 }],
+                ^
+  
+  SyntaxError: Unexpected token ':'
+      at wrapSafe (node:internal/modules/cjs/loader:1497:18)
+      at Module._compile (node:internal/modules/cjs/loader:1519:20)
+      at Object..js (node:internal/modules/cjs/loader:1709:10)
+      at Module.load (node:internal/modules/cjs/loader:1315:32)
+      at Function._load (node:internal/modules/cjs/loader:1125:12)
+      at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:216:24)
+      at Module.require (node:internal/modules/cjs/loader:1337:12)
+      at require (node:internal/modules/helpers:139:16)
+      at Object.<anonymous> (/Users/mac/Desktop/projects/yehaww/routes/subscription/index.js:10:5),
+  level: 'error',
+  message: "uncaughtException: Unexpected token ':'\n" +
+    '/Users/mac/Desktop/projects/yehaww/controllers/subscription/index.js:54\n' +
+    '    line_items: [{ price: lookup_key, quantity: 1 }],\n' +
+    '              ^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token ':'\n" +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1497:18)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1519:20)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1709:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1315:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1125:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:216:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1337:12)\n' +
+    '    at require (node:internal/modules/helpers:139:16)\n' +
+    '    at Object.<anonymous> (/Users/mac/Desktop/projects/yehaww/routes/subscription/index.js:10:5)',
+  stack: '/Users/mac/Desktop/projects/yehaww/controllers/subscription/index.js:54\n' +
+    '    line_items: [{ price: lookup_key, quantity: 1 }],\n' +
+    '              ^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token ':'\n" +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1497:18)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1519:20)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1709:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1315:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1125:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:216:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1337:12)\n' +
+    '    at require (node:internal/modules/helpers:139:16)\n' +
+    '    at Object.<anonymous> (/Users/mac/Desktop/projects/yehaww/routes/subscription/index.js:10:5)',
+  exception: true,
+  date: 'Thu Nov 28 2024 18:32:04 GMT+0500 (Pakistan Standard Time)',
+  process: {
+    pid: 92272,
+    uid: 501,
+    gid: 20,
+    cwd: '/Users/mac/Desktop/projects/yehaww',
+    execPath: '/usr/local/Cellar/node/23.1.0_1/bin/node',
+    version: 'v23.1.0',
+    argv: [
+      '/usr/local/Cellar/node/23.1.0_1/bin/node',
+      '/Users/mac/Desktop/projects/yehaww/index.js'
+    ],
+    memoryUsage: {
+      rss: 254488576,
+      heapTotal: 152637440,
+      heapUsed: 119977648,
+      external: 21529086,
+      arrayBuffers: 18311520
+    }
+  },
+  os: {
+    loadavg: [ 5.17431640625, 4.18603515625, 3.43408203125 ],
+    uptime: 633733
+  },
+  trace: [
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1497,
+      method: null,
+      native: false
+    },
+    {
+      column: 20,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1519,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Object..js',
+      line: 1709,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1315,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Function._load',
+      line: 1125,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:diagnostics_channel',
+      function: 'TracingChannel.traceSync',
+      line: 322,
+      method: 'traceSync',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapModuleLoad',
+      line: 216,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1337,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 139,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: '/Users/mac/Desktop/projects/yehaww/routes/subscription/index.js',
+      function: null,
+      line: 10,
+      method: null,
+      native: false
+    }
+  ]
+}
+{
+  error: /Users/mac/Desktop/projects/yehaww/controllers/subscription/index.js:51
+      line_items: [{ price: lookup_key, quantity: 1 }],
+                ^
+  
+  SyntaxError: Unexpected token ':'
+      at wrapSafe (node:internal/modules/cjs/loader:1497:18)
+      at Module._compile (node:internal/modules/cjs/loader:1519:20)
+      at Object..js (node:internal/modules/cjs/loader:1709:10)
+      at Module.load (node:internal/modules/cjs/loader:1315:32)
+      at Function._load (node:internal/modules/cjs/loader:1125:12)
+      at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:216:24)
+      at Module.require (node:internal/modules/cjs/loader:1337:12)
+      at require (node:internal/modules/helpers:139:16)
+      at Object.<anonymous> (/Users/mac/Desktop/projects/yehaww/routes/subscription/index.js:10:5),
+  level: 'error',
+  message: "uncaughtException: Unexpected token ':'\n" +
+    '/Users/mac/Desktop/projects/yehaww/controllers/subscription/index.js:51\n' +
+    '    line_items: [{ price: lookup_key, quantity: 1 }],\n' +
+    '              ^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token ':'\n" +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1497:18)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1519:20)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1709:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1315:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1125:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:216:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1337:12)\n' +
+    '    at require (node:internal/modules/helpers:139:16)\n' +
+    '    at Object.<anonymous> (/Users/mac/Desktop/projects/yehaww/routes/subscription/index.js:10:5)',
+  stack: '/Users/mac/Desktop/projects/yehaww/controllers/subscription/index.js:51\n' +
+    '    line_items: [{ price: lookup_key, quantity: 1 }],\n' +
+    '              ^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token ':'\n" +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1497:18)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1519:20)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1709:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1315:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1125:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:216:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1337:12)\n' +
+    '    at require (node:internal/modules/helpers:139:16)\n' +
+    '    at Object.<anonymous> (/Users/mac/Desktop/projects/yehaww/routes/subscription/index.js:10:5)',
+  exception: true,
+  date: 'Thu Nov 28 2024 18:32:06 GMT+0500 (Pakistan Standard Time)',
+  process: {
+    pid: 92283,
+    uid: 501,
+    gid: 20,
+    cwd: '/Users/mac/Desktop/projects/yehaww',
+    execPath: '/usr/local/Cellar/node/23.1.0_1/bin/node',
+    version: 'v23.1.0',
+    argv: [
+      '/usr/local/Cellar/node/23.1.0_1/bin/node',
+      '/Users/mac/Desktop/projects/yehaww/index.js'
+    ],
+    memoryUsage: {
+      rss: 252596224,
+      heapTotal: 151851008,
+      heapUsed: 119993192,
+      external: 21529086,
+      arrayBuffers: 18311520
+    }
+  },
+  os: { loadavg: [ 5, 4.166015625, 3.43115234375 ], uptime: 633735 },
+  trace: [
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1497,
+      method: null,
+      native: false
+    },
+    {
+      column: 20,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1519,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Object..js',
+      line: 1709,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1315,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Function._load',
+      line: 1125,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:diagnostics_channel',
+      function: 'TracingChannel.traceSync',
+      line: 322,
+      method: 'traceSync',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapModuleLoad',
+      line: 216,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1337,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 139,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: '/Users/mac/Desktop/projects/yehaww/routes/subscription/index.js',
+      function: null,
+      line: 10,
+      method: null,
+      native: false
+    }
+  ]
+}
+{
+  error: /Users/mac/Desktop/projects/yehaww/controllers/subscription/index.js:50
+      (...discount && discounts: discount ? [{ coupon: discount }] : [],)
+      ^
+  
+  SyntaxError: Unexpected token '('
+      at wrapSafe (node:internal/modules/cjs/loader:1497:18)
+      at Module._compile (node:internal/modules/cjs/loader:1519:20)
+      at Object..js (node:internal/modules/cjs/loader:1709:10)
+      at Module.load (node:internal/modules/cjs/loader:1315:32)
+      at Function._load (node:internal/modules/cjs/loader:1125:12)
+      at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:216:24)
+      at Module.require (node:internal/modules/cjs/loader:1337:12)
+      at require (node:internal/modules/helpers:139:16)
+      at Object.<anonymous> (/Users/mac/Desktop/projects/yehaww/routes/subscription/index.js:10:5),
+  level: 'error',
+  message: "uncaughtException: Unexpected token '('\n" +
+    '/Users/mac/Desktop/projects/yehaww/controllers/subscription/index.js:50\n' +
+    '    (...discount && discounts: discount ? [{ coupon: discount }] : [],)\n' +
+    '    ^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token '('\n" +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1497:18)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1519:20)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1709:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1315:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1125:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:216:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1337:12)\n' +
+    '    at require (node:internal/modules/helpers:139:16)\n' +
+    '    at Object.<anonymous> (/Users/mac/Desktop/projects/yehaww/routes/subscription/index.js:10:5)',
+  stack: '/Users/mac/Desktop/projects/yehaww/controllers/subscription/index.js:50\n' +
+    '    (...discount && discounts: discount ? [{ coupon: discount }] : [],)\n' +
+    '    ^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token '('\n" +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1497:18)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1519:20)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1709:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1315:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1125:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:216:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1337:12)\n' +
+    '    at require (node:internal/modules/helpers:139:16)\n' +
+    '    at Object.<anonymous> (/Users/mac/Desktop/projects/yehaww/routes/subscription/index.js:10:5)',
+  exception: true,
+  date: 'Thu Nov 28 2024 18:37:10 GMT+0500 (Pakistan Standard Time)',
+  process: {
+    pid: 92854,
+    uid: 501,
+    gid: 20,
+    cwd: '/Users/mac/Desktop/projects/yehaww',
+    execPath: '/usr/local/Cellar/node/23.1.0_1/bin/node',
+    version: 'v23.1.0',
+    argv: [
+      '/usr/local/Cellar/node/23.1.0_1/bin/node',
+      '/Users/mac/Desktop/projects/yehaww/index.js'
+    ],
+    memoryUsage: {
+      rss: 252678144,
+      heapTotal: 151851008,
+      heapUsed: 119980240,
+      external: 21529086,
+      arrayBuffers: 18311520
+    }
+  },
+  os: {
+    loadavg: [ 3.572265625, 3.39697265625, 3.26904296875 ],
+    uptime: 634039
+  },
+  trace: [
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1497,
+      method: null,
+      native: false
+    },
+    {
+      column: 20,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1519,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Object..js',
+      line: 1709,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1315,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Function._load',
+      line: 1125,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:diagnostics_channel',
+      function: 'TracingChannel.traceSync',
+      line: 322,
+      method: 'traceSync',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapModuleLoad',
+      line: 216,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1337,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 139,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: '/Users/mac/Desktop/projects/yehaww/routes/subscription/index.js',
+      function: null,
+      line: 10,
+      method: null,
+      native: false
+    }
+  ]
+}
+{
+  error: /Users/mac/Desktop/projects/yehaww/controllers/subscription/index.js:50
+      (...discount && discounts: discount ? [{ coupon: discount }] : [],),
+      ^
+  
+  SyntaxError: Unexpected token '('
+      at wrapSafe (node:internal/modules/cjs/loader:1497:18)
+      at Module._compile (node:internal/modules/cjs/loader:1519:20)
+      at Object..js (node:internal/modules/cjs/loader:1709:10)
+      at Module.load (node:internal/modules/cjs/loader:1315:32)
+      at Function._load (node:internal/modules/cjs/loader:1125:12)
+      at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:216:24)
+      at Module.require (node:internal/modules/cjs/loader:1337:12)
+      at require (node:internal/modules/helpers:139:16)
+      at Object.<anonymous> (/Users/mac/Desktop/projects/yehaww/routes/subscription/index.js:10:5),
+  level: 'error',
+  message: "uncaughtException: Unexpected token '('\n" +
+    '/Users/mac/Desktop/projects/yehaww/controllers/subscription/index.js:50\n' +
+    '    (...discount && discounts: discount ? [{ coupon: discount }] : [],),\n' +
+    '    ^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token '('\n" +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1497:18)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1519:20)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1709:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1315:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1125:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:216:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1337:12)\n' +
+    '    at require (node:internal/modules/helpers:139:16)\n' +
+    '    at Object.<anonymous> (/Users/mac/Desktop/projects/yehaww/routes/subscription/index.js:10:5)',
+  stack: '/Users/mac/Desktop/projects/yehaww/controllers/subscription/index.js:50\n' +
+    '    (...discount && discounts: discount ? [{ coupon: discount }] : [],),\n' +
+    '    ^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token '('\n" +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1497:18)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1519:20)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1709:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1315:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1125:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:216:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1337:12)\n' +
+    '    at require (node:internal/modules/helpers:139:16)\n' +
+    '    at Object.<anonymous> (/Users/mac/Desktop/projects/yehaww/routes/subscription/index.js:10:5)',
+  exception: true,
+  date: 'Thu Nov 28 2024 18:37:16 GMT+0500 (Pakistan Standard Time)',
+  process: {
+    pid: 92878,
+    uid: 501,
+    gid: 20,
+    cwd: '/Users/mac/Desktop/projects/yehaww',
+    execPath: '/usr/local/Cellar/node/23.1.0_1/bin/node',
+    version: 'v23.1.0',
+    argv: [
+      '/usr/local/Cellar/node/23.1.0_1/bin/node',
+      '/Users/mac/Desktop/projects/yehaww/index.js'
+    ],
+    memoryUsage: {
+      rss: 252624896,
+      heapTotal: 151326720,
+      heapUsed: 119966968,
+      external: 21529086,
+      arrayBuffers: 18311520
+    }
+  },
+  os: {
+    loadavg: [ 5.9287109375, 3.88818359375, 3.44287109375 ],
+    uptime: 634045
+  },
+  trace: [
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1497,
+      method: null,
+      native: false
+    },
+    {
+      column: 20,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1519,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Object..js',
+      line: 1709,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1315,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Function._load',
+      line: 1125,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:diagnostics_channel',
+      function: 'TracingChannel.traceSync',
+      line: 322,
+      method: 'traceSync',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapModuleLoad',
+      line: 216,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1337,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 139,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: '/Users/mac/Desktop/projects/yehaww/routes/subscription/index.js',
+      function: null,
+      line: 10,
+      method: null,
+      native: false
+    }
+  ]
+}
+{
+  error: /Users/mac/Desktop/projects/yehaww/controllers/subscription/index.js:278
+  };
+  ^
+  
+  SyntaxError: Unexpected token '}'
+      at wrapSafe (node:internal/modules/cjs/loader:1497:18)
+      at Module._compile (node:internal/modules/cjs/loader:1519:20)
+      at Object..js (node:internal/modules/cjs/loader:1709:10)
+      at Module.load (node:internal/modules/cjs/loader:1315:32)
+      at Function._load (node:internal/modules/cjs/loader:1125:12)
+      at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:216:24)
+      at Module.require (node:internal/modules/cjs/loader:1337:12)
+      at require (node:internal/modules/helpers:139:16)
+      at Object.<anonymous> (/Users/mac/Desktop/projects/yehaww/routes/subscription/index.js:10:5),
+  level: 'error',
+  message: "uncaughtException: Unexpected token '}'\n" +
+    '/Users/mac/Desktop/projects/yehaww/controllers/subscription/index.js:278\n' +
+    '};\n' +
+    '^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token '}'\n" +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1497:18)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1519:20)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1709:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1315:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1125:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:216:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1337:12)\n' +
+    '    at require (node:internal/modules/helpers:139:16)\n' +
+    '    at Object.<anonymous> (/Users/mac/Desktop/projects/yehaww/routes/subscription/index.js:10:5)',
+  stack: '/Users/mac/Desktop/projects/yehaww/controllers/subscription/index.js:278\n' +
+    '};\n' +
+    '^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token '}'\n" +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1497:18)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1519:20)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1709:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1315:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1125:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:216:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1337:12)\n' +
+    '    at require (node:internal/modules/helpers:139:16)\n' +
+    '    at Object.<anonymous> (/Users/mac/Desktop/projects/yehaww/routes/subscription/index.js:10:5)',
+  exception: true,
+  date: 'Tue Dec 10 2024 14:54:24 GMT+0500 (Pakistan Standard Time)',
+  process: {
+    pid: 60692,
+    uid: 501,
+    gid: 20,
+    cwd: '/Users/mac/Desktop/projects/yehaww',
+    execPath: '/usr/local/Cellar/node/23.1.0_1/bin/node',
+    version: 'v23.1.0',
+    argv: [
+      '/usr/local/Cellar/node/23.1.0_1/bin/node',
+      '/Users/mac/Desktop/projects/yehaww/index.js'
+    ],
+    memoryUsage: {
+      rss: 253292544,
+      heapTotal: 151851008,
+      heapUsed: 119911416,
+      external: 21529086,
+      arrayBuffers: 18311520
+    }
+  },
+  os: { loadavg: [ 2.09375, 2.4677734375, 3.02490234375 ], uptime: 360121 },
+  trace: [
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1497,
+      method: null,
+      native: false
+    },
+    {
+      column: 20,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1519,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Object..js',
+      line: 1709,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1315,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Function._load',
+      line: 1125,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:diagnostics_channel',
+      function: 'TracingChannel.traceSync',
+      line: 322,
+      method: 'traceSync',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapModuleLoad',
+      line: 216,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1337,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 139,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: '/Users/mac/Desktop/projects/yehaww/routes/subscription/index.js',
+      function: null,
+      line: 10,
+      method: null,
+      native: false
+    }
+  ]
+}
+{
+  error: /Users/mac/Desktop/projects/yehaww/controllers/subscription/index.js:278
+  };
+  ^
+  
+  SyntaxError: Unexpected token '}'
+      at wrapSafe (node:internal/modules/cjs/loader:1497:18)
+      at Module._compile (node:internal/modules/cjs/loader:1519:20)
+      at Object..js (node:internal/modules/cjs/loader:1709:10)
+      at Module.load (node:internal/modules/cjs/loader:1315:32)
+      at Function._load (node:internal/modules/cjs/loader:1125:12)
+      at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:216:24)
+      at Module.require (node:internal/modules/cjs/loader:1337:12)
+      at require (node:internal/modules/helpers:139:16)
+      at Object.<anonymous> (/Users/mac/Desktop/projects/yehaww/routes/subscription/index.js:10:5),
+  level: 'error',
+  message: "uncaughtException: Unexpected token '}'\n" +
+    '/Users/mac/Desktop/projects/yehaww/controllers/subscription/index.js:278\n' +
+    '};\n' +
+    '^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token '}'\n" +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1497:18)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1519:20)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1709:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1315:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1125:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:216:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1337:12)\n' +
+    '    at require (node:internal/modules/helpers:139:16)\n' +
+    '    at Object.<anonymous> (/Users/mac/Desktop/projects/yehaww/routes/subscription/index.js:10:5)',
+  stack: '/Users/mac/Desktop/projects/yehaww/controllers/subscription/index.js:278\n' +
+    '};\n' +
+    '^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token '}'\n" +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1497:18)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1519:20)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1709:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1315:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1125:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:216:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1337:12)\n' +
+    '    at require (node:internal/modules/helpers:139:16)\n' +
+    '    at Object.<anonymous> (/Users/mac/Desktop/projects/yehaww/routes/subscription/index.js:10:5)',
+  exception: true,
+  date: 'Tue Dec 10 2024 14:56:18 GMT+0500 (Pakistan Standard Time)',
+  process: {
+    pid: 60868,
+    uid: 501,
+    gid: 20,
+    cwd: '/Users/mac/Desktop/projects/yehaww',
+    execPath: '/usr/local/Cellar/node/23.1.0_1/bin/node',
+    version: 'v23.1.0',
+    argv: [
+      '/usr/local/Cellar/node/23.1.0_1/bin/node',
+      '/Users/mac/Desktop/projects/yehaww/index.js'
+    ],
+    memoryUsage: {
+      rss: 254181376,
+      heapTotal: 151588864,
+      heapUsed: 119943680,
+      external: 21529086,
+      arrayBuffers: 18311520
+    }
+  },
+  os: {
+    loadavg: [ 1.685546875, 2.18115234375, 2.83544921875 ],
+    uptime: 360235
+  },
+  trace: [
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1497,
+      method: null,
+      native: false
+    },
+    {
+      column: 20,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1519,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Object..js',
+      line: 1709,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1315,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Function._load',
+      line: 1125,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:diagnostics_channel',
+      function: 'TracingChannel.traceSync',
+      line: 322,
+      method: 'traceSync',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapModuleLoad',
+      line: 216,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1337,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 139,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: '/Users/mac/Desktop/projects/yehaww/routes/subscription/index.js',
+      function: null,
+      line: 10,
+      method: null,
+      native: false
+    }
+  ]
+}
+{
+  error: /Users/mac/Desktop/projects/yehaww/controllers/subscription/index.js:419
+        let discountAmount = 0;
+            ^
+  
+  SyntaxError: Identifier 'discountAmount' has already been declared
+      at wrapSafe (node:internal/modules/cjs/loader:1497:18)
+      at Module._compile (node:internal/modules/cjs/loader:1519:20)
+      at Object..js (node:internal/modules/cjs/loader:1709:10)
+      at Module.load (node:internal/modules/cjs/loader:1315:32)
+      at Function._load (node:internal/modules/cjs/loader:1125:12)
+      at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:216:24)
+      at Module.require (node:internal/modules/cjs/loader:1337:12)
+      at require (node:internal/modules/helpers:139:16)
+      at Object.<anonymous> (/Users/mac/Desktop/projects/yehaww/routes/subscription/index.js:10:5),
+  level: 'error',
+  message: "uncaughtException: Identifier 'discountAmount' has already been declared\n" +
+    '/Users/mac/Desktop/projects/yehaww/controllers/subscription/index.js:419\n' +
+    '      let discountAmount = 0;\n' +
+    '          ^\n' +
+    '\n' +
+    "SyntaxError: Identifier 'discountAmount' has already been declared\n" +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1497:18)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1519:20)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1709:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1315:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1125:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:216:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1337:12)\n' +
+    '    at require (node:internal/modules/helpers:139:16)\n' +
+    '    at Object.<anonymous> (/Users/mac/Desktop/projects/yehaww/routes/subscription/index.js:10:5)',
+  stack: '/Users/mac/Desktop/projects/yehaww/controllers/subscription/index.js:419\n' +
+    '      let discountAmount = 0;\n' +
+    '          ^\n' +
+    '\n' +
+    "SyntaxError: Identifier 'discountAmount' has already been declared\n" +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1497:18)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1519:20)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1709:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1315:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1125:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:216:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1337:12)\n' +
+    '    at require (node:internal/modules/helpers:139:16)\n' +
+    '    at Object.<anonymous> (/Users/mac/Desktop/projects/yehaww/routes/subscription/index.js:10:5)',
+  exception: true,
+  date: 'Wed Dec 11 2024 17:31:27 GMT+0500 (Pakistan Standard Time)',
+  process: {
+    pid: 493,
+    uid: 501,
+    gid: 20,
+    cwd: '/Users/mac/Desktop/projects/yehaww',
+    execPath: '/usr/local/Cellar/node/23.1.0_1/bin/node',
+    version: 'v23.1.0',
+    argv: [
+      '/usr/local/Cellar/node/23.1.0_1/bin/node',
+      '/Users/mac/Desktop/projects/yehaww/index.js'
+    ],
+    memoryUsage: {
+      rss: 253009920,
+      heapTotal: 151851008,
+      heapUsed: 120011856,
+      external: 21529086,
+      arrayBuffers: 18311520
+    }
+  },
+  os: {
+    loadavg: [ 6.51904296875, 4.5224609375, 3.974609375 ],
+    uptime: 455945
+  },
+  trace: [
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1497,
+      method: null,
+      native: false
+    },
+    {
+      column: 20,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1519,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Object..js',
+      line: 1709,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1315,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Function._load',
+      line: 1125,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:diagnostics_channel',
+      function: 'TracingChannel.traceSync',
+      line: 322,
+      method: 'traceSync',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapModuleLoad',
+      line: 216,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1337,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 139,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: '/Users/mac/Desktop/projects/yehaww/routes/subscription/index.js',
+      function: null,
+      line: 10,
+      method: null,
+      native: false
+    }
+  ]
+}
+{
+  error: /Users/mac/Desktop/projects/yehaww/controllers/subscription/index.js:390
+        });\   let discountAmount = 0;
+           ^
+  
+  SyntaxError: Invalid or unexpected token
+      at wrapSafe (node:internal/modules/cjs/loader:1497:18)
+      at Module._compile (node:internal/modules/cjs/loader:1519:20)
+      at Object..js (node:internal/modules/cjs/loader:1709:10)
+      at Module.load (node:internal/modules/cjs/loader:1315:32)
+      at Function._load (node:internal/modules/cjs/loader:1125:12)
+      at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:216:24)
+      at Module.require (node:internal/modules/cjs/loader:1337:12)
+      at require (node:internal/modules/helpers:139:16)
+      at Object.<anonymous> (/Users/mac/Desktop/projects/yehaww/routes/subscription/index.js:10:5),
+  level: 'error',
+  message: 'uncaughtException: Invalid or unexpected token\n' +
+    '/Users/mac/Desktop/projects/yehaww/controllers/subscription/index.js:390\n' +
+    '      });\\   let discountAmount = 0;\n' +
+    '         ^\n' +
+    '\n' +
+    'SyntaxError: Invalid or unexpected token\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1497:18)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1519:20)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1709:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1315:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1125:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:216:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1337:12)\n' +
+    '    at require (node:internal/modules/helpers:139:16)\n' +
+    '    at Object.<anonymous> (/Users/mac/Desktop/projects/yehaww/routes/subscription/index.js:10:5)',
+  stack: '/Users/mac/Desktop/projects/yehaww/controllers/subscription/index.js:390\n' +
+    '      });\\   let discountAmount = 0;\n' +
+    '         ^\n' +
+    '\n' +
+    'SyntaxError: Invalid or unexpected token\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1497:18)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1519:20)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1709:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1315:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1125:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:216:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1337:12)\n' +
+    '    at require (node:internal/modules/helpers:139:16)\n' +
+    '    at Object.<anonymous> (/Users/mac/Desktop/projects/yehaww/routes/subscription/index.js:10:5)',
+  exception: true,
+  date: 'Wed Dec 11 2024 17:31:42 GMT+0500 (Pakistan Standard Time)',
+  process: {
+    pid: 771,
+    uid: 501,
+    gid: 20,
+    cwd: '/Users/mac/Desktop/projects/yehaww',
+    execPath: '/usr/local/Cellar/node/23.1.0_1/bin/node',
+    version: 'v23.1.0',
+    argv: [
+      '/usr/local/Cellar/node/23.1.0_1/bin/node',
+      '/Users/mac/Desktop/projects/yehaww/index.js'
+    ],
+    memoryUsage: {
+      rss: 253456384,
+      heapTotal: 151851008,
+      heapUsed: 120073392,
+      external: 21529086,
+      arrayBuffers: 18311520
+    }
+  },
+  os: {
+    loadavg: [ 5.35791015625, 4.365234375, 3.927734375 ],
+    uptime: 455960
+  },
+  trace: [
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1497,
+      method: null,
+      native: false
+    },
+    {
+      column: 20,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1519,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Object..js',
+      line: 1709,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1315,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Function._load',
+      line: 1125,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:diagnostics_channel',
+      function: 'TracingChannel.traceSync',
+      line: 322,
+      method: 'traceSync',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapModuleLoad',
+      line: 216,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1337,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 139,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: '/Users/mac/Desktop/projects/yehaww/routes/subscription/index.js',
+      function: null,
+      line: 10,
+      method: null,
+      native: false
+    }
+  ]
+}
+{
+  error: ReferenceError: getSubscriptionHistory is not defined
+      at Object.<anonymous> (/Users/mac/Desktop/projects/yehaww/controllers/subscription/index.js:554:3)
+      at Module._compile (node:internal/modules/cjs/loader:1572:14)
+      at Object..js (node:internal/modules/cjs/loader:1709:10)
+      at Module.load (node:internal/modules/cjs/loader:1315:32)
+      at Function._load (node:internal/modules/cjs/loader:1125:12)
+      at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:216:24)
+      at Module.require (node:internal/modules/cjs/loader:1337:12)
+      at require (node:internal/modules/helpers:139:16)
+      at Object.<anonymous> (/Users/mac/Desktop/projects/yehaww/routes/subscription/index.js:10:5),
+  level: 'error',
+  message: 'uncaughtException: getSubscriptionHistory is not defined\n' +
+    'ReferenceError: getSubscriptionHistory is not defined\n' +
+    '    at Object.<anonymous> (/Users/mac/Desktop/projects/yehaww/controllers/subscription/index.js:554:3)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1572:14)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1709:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1315:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1125:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:216:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1337:12)\n' +
+    '    at require (node:internal/modules/helpers:139:16)\n' +
+    '    at Object.<anonymous> (/Users/mac/Desktop/projects/yehaww/routes/subscription/index.js:10:5)',
+  stack: 'ReferenceError: getSubscriptionHistory is not defined\n' +
+    '    at Object.<anonymous> (/Users/mac/Desktop/projects/yehaww/controllers/subscription/index.js:554:3)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1572:14)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1709:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1315:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1125:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:216:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1337:12)\n' +
+    '    at require (node:internal/modules/helpers:139:16)\n' +
+    '    at Object.<anonymous> (/Users/mac/Desktop/projects/yehaww/routes/subscription/index.js:10:5)',
+  exception: true,
+  date: 'Wed Dec 11 2024 18:21:21 GMT+0500 (Pakistan Standard Time)',
+  process: {
+    pid: 4660,
+    uid: 501,
+    gid: 20,
+    cwd: '/Users/mac/Desktop/projects/yehaww',
+    execPath: '/usr/local/Cellar/node/23.1.0_1/bin/node',
+    version: 'v23.1.0',
+    argv: [
+      '/usr/local/Cellar/node/23.1.0_1/bin/node',
+      '/Users/mac/Desktop/projects/yehaww/index.js'
+    ],
+    memoryUsage: {
+      rss: 255070208,
+      heapTotal: 151851008,
+      heapUsed: 120186512,
+      external: 21529086,
+      arrayBuffers: 18311520
+    }
+  },
+  os: {
+    loadavg: [ 3.65380859375, 3.64404296875, 3.39501953125 ],
+    uptime: 458939
+  },
+  trace: [
+    {
+      column: 3,
+      file: '/Users/mac/Desktop/projects/yehaww/controllers/subscription/index.js',
+      function: null,
+      line: 554,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1572,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Object..js',
+      line: 1709,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1315,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Function._load',
+      line: 1125,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:diagnostics_channel',
+      function: 'TracingChannel.traceSync',
+      line: 322,
+      method: 'traceSync',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapModuleLoad',
+      line: 216,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1337,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 139,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: '/Users/mac/Desktop/projects/yehaww/routes/subscription/index.js',
+      function: null,
+      line: 10,
+      method: null,
+      native: false
+    }
+  ]
+}
+{
+  error: /Users/mac/Desktop/projects/yehaww/controllers/subscription/index.js:307
+          const stripeSubscription = await stripe.subscriptions.retrieve(subscription?.id);
+                                     ^^^^^
+  
+  SyntaxError: await is only valid in async functions and the top level bodies of modules
+      at wrapSafe (node:internal/modules/cjs/loader:1497:18)
+      at Module._compile (node:internal/modules/cjs/loader:1519:20)
+      at Object..js (node:internal/modules/cjs/loader:1709:10)
+      at Module.load (node:internal/modules/cjs/loader:1315:32)
+      at Function._load (node:internal/modules/cjs/loader:1125:12)
+      at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:216:24)
+      at Module.require (node:internal/modules/cjs/loader:1337:12)
+      at require (node:internal/modules/helpers:139:16)
+      at Object.<anonymous> (/Users/mac/Desktop/projects/yehaww/routes/subscription/index.js:10:5),
+  level: 'error',
+  message: 'uncaughtException: await is only valid in async functions and the top level bodies of modules\n' +
+    '/Users/mac/Desktop/projects/yehaww/controllers/subscription/index.js:307\n' +
+    '        const stripeSubscription = await stripe.subscriptions.retrieve(subscription?.id);\n' +
+    '                                   ^^^^^\n' +
+    '\n' +
+    'SyntaxError: await is only valid in async functions and the top level bodies of modules\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1497:18)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1519:20)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1709:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1315:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1125:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:216:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1337:12)\n' +
+    '    at require (node:internal/modules/helpers:139:16)\n' +
+    '    at Object.<anonymous> (/Users/mac/Desktop/projects/yehaww/routes/subscription/index.js:10:5)',
+  stack: '/Users/mac/Desktop/projects/yehaww/controllers/subscription/index.js:307\n' +
+    '        const stripeSubscription = await stripe.subscriptions.retrieve(subscription?.id);\n' +
+    '                                   ^^^^^\n' +
+    '\n' +
+    'SyntaxError: await is only valid in async functions and the top level bodies of modules\n' +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1497:18)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1519:20)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1709:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1315:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1125:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:216:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1337:12)\n' +
+    '    at require (node:internal/modules/helpers:139:16)\n' +
+    '    at Object.<anonymous> (/Users/mac/Desktop/projects/yehaww/routes/subscription/index.js:10:5)',
+  exception: true,
+  date: 'Wed Dec 11 2024 19:20:22 GMT+0500 (Pakistan Standard Time)',
+  process: {
+    pid: 9583,
+    uid: 501,
+    gid: 20,
+    cwd: '/Users/mac/Desktop/projects/yehaww',
+    execPath: '/usr/local/Cellar/node/23.1.0_1/bin/node',
+    version: 'v23.1.0',
+    argv: [
+      '/usr/local/Cellar/node/23.1.0_1/bin/node',
+      '/Users/mac/Desktop/projects/yehaww/index.js'
+    ],
+    memoryUsage: {
+      rss: 253628416,
+      heapTotal: 151851008,
+      heapUsed: 119925376,
+      external: 21529086,
+      arrayBuffers: 18311520
+    }
+  },
+  os: {
+    loadavg: [ 4.32421875, 2.91845703125, 2.6845703125 ],
+    uptime: 462480
+  },
+  trace: [
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1497,
+      method: null,
+      native: false
+    },
+    {
+      column: 20,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1519,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Object..js',
+      line: 1709,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1315,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Function._load',
+      line: 1125,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:diagnostics_channel',
+      function: 'TracingChannel.traceSync',
+      line: 322,
+      method: 'traceSync',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapModuleLoad',
+      line: 216,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1337,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 139,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: '/Users/mac/Desktop/projects/yehaww/routes/subscription/index.js',
+      function: null,
+      line: 10,
+      method: null,
+      native: false
+    }
+  ]
+}
+{
+  error: /Users/mac/Desktop/projects/yehaww/controllers/subscription/index.js:332
+              plan,
+              ^^^^
+  
+  SyntaxError: Unexpected identifier 'plan'
+      at wrapSafe (node:internal/modules/cjs/loader:1497:18)
+      at Module._compile (node:internal/modules/cjs/loader:1519:20)
+      at Object..js (node:internal/modules/cjs/loader:1709:10)
+      at Module.load (node:internal/modules/cjs/loader:1315:32)
+      at Function._load (node:internal/modules/cjs/loader:1125:12)
+      at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:216:24)
+      at Module.require (node:internal/modules/cjs/loader:1337:12)
+      at require (node:internal/modules/helpers:139:16)
+      at Object.<anonymous> (/Users/mac/Desktop/projects/yehaww/routes/subscription/index.js:10:5),
+  level: 'error',
+  message: "uncaughtException: Unexpected identifier 'plan'\n" +
+    '/Users/mac/Desktop/projects/yehaww/controllers/subscription/index.js:332\n' +
+    '            plan,\n' +
+    '            ^^^^\n' +
+    '\n' +
+    "SyntaxError: Unexpected identifier 'plan'\n" +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1497:18)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1519:20)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1709:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1315:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1125:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:216:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1337:12)\n' +
+    '    at require (node:internal/modules/helpers:139:16)\n' +
+    '    at Object.<anonymous> (/Users/mac/Desktop/projects/yehaww/routes/subscription/index.js:10:5)',
+  stack: '/Users/mac/Desktop/projects/yehaww/controllers/subscription/index.js:332\n' +
+    '            plan,\n' +
+    '            ^^^^\n' +
+    '\n' +
+    "SyntaxError: Unexpected identifier 'plan'\n" +
+    '    at wrapSafe (node:internal/modules/cjs/loader:1497:18)\n' +
+    '    at Module._compile (node:internal/modules/cjs/loader:1519:20)\n' +
+    '    at Object..js (node:internal/modules/cjs/loader:1709:10)\n' +
+    '    at Module.load (node:internal/modules/cjs/loader:1315:32)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1125:12)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:216:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1337:12)\n' +
+    '    at require (node:internal/modules/helpers:139:16)\n' +
+    '    at Object.<anonymous> (/Users/mac/Desktop/projects/yehaww/routes/subscription/index.js:10:5)',
+  exception: true,
+  date: 'Wed Dec 11 2024 19:29:46 GMT+0500 (Pakistan Standard Time)',
+  process: {
+    pid: 10345,
+    uid: 501,
+    gid: 20,
+    cwd: '/Users/mac/Desktop/projects/yehaww',
+    execPath: '/usr/local/Cellar/node/23.1.0_1/bin/node',
+    version: 'v23.1.0',
+    argv: [
+      '/usr/local/Cellar/node/23.1.0_1/bin/node',
+      '/Users/mac/Desktop/projects/yehaww/index.js'
+    ],
+    memoryUsage: {
+      rss: 253358080,
+      heapTotal: 151588864,
+      heapUsed: 119903536,
+      external: 21529086,
+      arrayBuffers: 18311520
+    }
+  },
+  os: {
+    loadavg: [ 3.69580078125, 2.638671875, 2.61181640625 ],
+    uptime: 463044
+  },
+  trace: [
+    {
+      column: 18,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapSafe',
+      line: 1497,
+      method: null,
+      native: false
+    },
+    {
+      column: 20,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module._compile',
+      line: 1519,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Object..js',
+      line: 1709,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.load',
+      line: 1315,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Function._load',
+      line: 1125,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:diagnostics_channel',
+      function: 'TracingChannel.traceSync',
+      line: 322,
+      method: 'traceSync',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapModuleLoad',
+      line: 216,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1337,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 139,
+      method: null,
+      native: false
+    },
+    {
+      column: 5,
+      file: '/Users/mac/Desktop/projects/yehaww/routes/subscription/index.js',
+      function: null,
+      line: 10,
+      method: null,
+      native: false
+    }
+  ]
+}

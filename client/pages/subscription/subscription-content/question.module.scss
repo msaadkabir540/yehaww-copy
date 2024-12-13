@@ -1,0 +1,36 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.main {
+  .heading {
+    font-weight: 700;
+    font-size: 21px;
+    color: #252525;
+    margin-bottom: 15px;
+  }
+  h1 {
+    font-weight: 600;
+    font-size: 25px;
+    color: #252525;
+  }
+  span {
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    color: #252525 !important;
+    margin-top: 28px;
+    display: flex;
+    justify-content: center;
+  }
+  .span {
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    color: #252525 !important;
+    margin-top: 28px;
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+.mainBody {
+  height: 100%;
+}

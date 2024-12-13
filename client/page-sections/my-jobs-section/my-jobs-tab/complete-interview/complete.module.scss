@@ -1,0 +1,105 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.gridSection {
+  @include gridTwo(30, 15);
+  margin: 30px 0px;
+}
+
+.right {
+  width: -webkit-fill-available;
+  @media (max-width: breakpoints.$md) {
+    width: 100%;
+  }
+  .video {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.main {
+  margin-top: 20px;
+  .mainFlex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 20px;
+    @media (max-width: 1150px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    h1 {
+      font-weight: 600;
+      font-size: 20px;
+      color: #252525;
+      display: flex;
+      align-items: center;
+      @media (max-width: breakpoints.$tab) {
+        font-size: 14px;
+      }
+      @media (max-width: 1150px) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      span {
+        font-weight: 400;
+        font-size: 14px;
+        color: #252525;
+        @media (max-width: breakpoints.$tab) {
+          font-size: 12px;
+        }
+      }
+    }
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      color: #c0c0c0;
+      @media (max-width: 1150px) {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 10px;
+      }
+      @media (max-width: breakpoints.$tab) {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.mainClass {
+  margin-top: 30px;
+  .uploadHeading {
+    font-weight: 600;
+    font-size: 20px;
+    color: #252525;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 20px;
+    @media (max-width: breakpoints.$tab) {
+      font-size: 14px;
+    }
+  }
+  .para {
+    font-size: 14px;
+    font-weight: 300;
+    color: #2c2c2c;
+    margin-top: 10px;
+    span {
+      text-decoration: underline;
+      color: colors.$btn;
+      font-weight: 500;
+    }
+  }
+  .uploadInput {
+    margin: 15px 0px;
+  }
+}
+
+.btn {
+  gap: 30px;
+  display: flex;
+}

@@ -1,0 +1,16 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.checked {
+  * {
+    color: #fabf35 !important;
+  }
+}
+.fa {
+  height: 40px;
+  margin-top: 20px;
+  * {
+    color: #e8e8e8;
+  }
+}

@@ -1,0 +1,51 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.headingDiv {
+  background: #f4f4f4;
+  border-bottom: 1px solid rgba(44, 44, 44, 0.05);
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.para {
+  color: #2c2c2c;
+  font-size: 14px;
+  font-weight: 300;
+  margin: 20px 0px;
+}
+.gridClass {
+  @include gridTwo(20, 30);
+}
+.label {
+  font-weight: 500;
+  font-size: 15px;
+  color: #252525;
+}
+.visa_sec {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  @media (max-width: $xs) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .margin {
+    @media (max-width: $xs) {
+      margin-bottom: 10px;
+    }
+  }
+}
+.errorMessage {
+  font-size: 12px;
+  color: #ff5050;
+  margin-top: 10px;
+}
+.minInput {
+  width: 100%;
+  margin: 20px 0px;
+}
+.btn {
+  max-width: 125px;
+}

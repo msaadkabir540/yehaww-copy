@@ -1,0 +1,106 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.searchSelect {
+  position: relative;
+  width: 100%;
+  .field {
+    img {
+      transform: rotate(90deg);
+    }
+  }
+  .searchDropdown {
+    margin-top: 10px;
+    background: #ffffff;
+    border: 1.2px solid #e3e3e3;
+    border-radius: 3.81414px;
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    height: fit-content;
+    overflow: auto;
+    max-height: 196px;
+    .innerDiv {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &:hover {
+        background: #eaedef;
+        cursor: pointer;
+        p {
+          color: #4086dd;
+        }
+      }
+      p {
+        font-style: normal;
+        color: #474747;
+        font-weight: 400;
+        font-size: 14px;
+        padding: 10px;
+        width: 100%;
+        letter-spacing: 0.147355px;
+        @media (max-width: breakpoints.$lg) {
+          font-size: 16px;
+        }
+        @media (max-width: breakpoints.$md) {
+          font-size: 14px;
+        }
+        @media (max-width: breakpoints.$xxs) {
+          font-size: 12px;
+        }
+      }
+      .icon {
+        display: flex;
+        align-items: center;
+        border: 1px solid red;
+      }
+    }
+    .innerDivDisabled {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      p {
+        font-style: normal;
+        color: #474747;
+        font-weight: 600;
+        font-size: 14px;
+        padding: 10px;
+        width: 100%;
+        letter-spacing: 0.147355px;
+        @media (max-width: breakpoints.$lg) {
+          font-size: 16px;
+        }
+        @media (max-width: breakpoints.$md) {
+          font-size: 14px;
+        }
+        @media (max-width: breakpoints.$xxs) {
+          font-size: 12px;
+        }
+      }
+      .icon {
+        display: flex;
+        align-items: center;
+        border: 1px solid red;
+      }
+    }
+  }
+}
+
+.noDataFound {
+  margin: auto;
+  text-align: center;
+  display: block;
+  padding: 15px 0px;
+}
+
+.errorHead {
+  color: #ff5050;
+}
+
+.errorMessage {
+  display: block;
+  font-size: 12px;
+  bottom: -18px;
+  color: #ff5050;
+}

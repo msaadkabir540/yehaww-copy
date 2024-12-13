@@ -1,0 +1,37 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.icon {
+  position: absolute;
+  right: 12px;
+  cursor: pointer;
+}
+
+.label {
+  font-weight: 600;
+  font-size: 15px;
+  color: #252525;
+}
+
+.errorHead {
+  color: #ff5050;
+}
+
+.errorMessage {
+  display: block;
+  font-size: 11px;
+  bottom: -18px;
+  color: #ff5050;
+}
+
+.select option:first-child {
+  color: #959595 !important;
+}
+
+.select {
+  color: #0e0e0e !important;
+}
+.control {
+  position: relative;
+}

@@ -1,0 +1,39 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.main_card {
+  .deck_sec {
+    display: grid;
+    grid-template-columns: repeat(2, 20% 80%);
+    margin-top: 20px;
+    @media (max-width: breakpoints.$tab) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .deck_heading {
+      p {
+        font-weight: 600;
+        font-size: 15px;
+        color: #252525;
+        padding: 5px 0;
+        cursor: pointer;
+        &:hover {
+          color: colors.$btn;
+        }
+      }
+    }
+    .second_sec {
+      @include gridFive(0, 20);
+      p {
+        font-weight: 400;
+        font-size: 13px;
+        color: #252525;
+        padding: 6px 0;
+        cursor: pointer;
+        &:hover {
+          color: colors.$btn;
+        }
+      }
+    }
+  }
+}

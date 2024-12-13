@@ -1,0 +1,70 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.para {
+  color: #2c2c2c;
+  font-size: 14px;
+  font-weight: 300;
+  margin: 20px 0px;
+  span {
+    font-style: italic;
+  }
+}
+.borderForm {
+  background-color: transparent !important;
+  border: none !important;
+  padding: 0px !important;
+  margin: 23px 0px 30px 0px !important;
+  position: relative;
+  .img {
+    position: absolute;
+    top: 5px;
+    left: 185px;
+    cursor: pointer;
+    @media (max-width: 480px) {
+      left: 140px;
+      top: 5px;
+    }
+
+    .newSearch {
+      display: none;
+    }
+    &:hover {
+      .newSearch {
+        display: block;
+        width: 230px;
+      }
+    }
+  }
+}
+
+.gridClass {
+  @include gridTwo(20, 30);
+}
+.marginClass {
+  margin: 20px 0px;
+}
+
+.label {
+  font-weight: 500;
+  font-size: 15px;
+  color: #252525;
+  position: relative;
+}
+.visa_sec {
+  margin-top: 10px;
+}
+.gridSection {
+  display: flex;
+  margin: 30px 0px;
+  @media (max-width: breakpoints.$md) {
+    flex-direction: column;
+  }
+}
+
+.errorMessage {
+  font-size: 12px;
+  bottom: 0px;
+  color: #ff5050;
+}

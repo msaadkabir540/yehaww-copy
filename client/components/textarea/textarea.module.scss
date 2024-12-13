@@ -1,0 +1,50 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.note {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  label {
+    font-weight: 600;
+    font-size: 15px;
+    color: #252525;
+  }
+  textarea {
+    padding: 10px 8px;
+    width: 100%;
+    font-size: 14px;
+    margin-top: 5px;
+    background: #f4f4f4;
+    resize: none;
+    border-radius: 3px;
+    background-color: transparent;
+    &:focus {
+      outline: none;
+      border: 1px solid #d5d5d5 !important;
+    }
+    &::placeholder {
+      font-size: 13px;
+      font-weight: 400;
+      color: #c0c0c0;
+    }
+  }
+}
+
+.errorMessage {
+  position: absolute;
+  display: block;
+  font-size: 11px;
+  color: #ff5050;
+  bottom: -20px;
+}
+
+.textCount {
+  position: absolute;
+  font-weight: 400;
+  font-size: 12px;
+  display: block;
+  color: #252525;
+  bottom: -23px;
+}

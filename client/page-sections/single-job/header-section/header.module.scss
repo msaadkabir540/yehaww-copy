@@ -1,0 +1,114 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.headingDiv {
+  padding: 30px 0px;
+  h1 {
+    font-weight: 500;
+    font-size: 17px;
+    color: colors.$btn;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    span {
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 17px;
+      color: #c0c0c0;
+      &:hover {
+        color: colors.$btn;
+      }
+    }
+    .arrow_icon {
+      height: 12px;
+      width: 13px;
+      margin: 0px 7px;
+      display: flex;
+    }
+  }
+}
+
+.icons {
+  height: 20px;
+  width: 20px;
+  font-size: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+  * {
+    color: #959595;
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media (max-width: breakpoints.$tab) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.btn_wrapper {
+  @media (max-width: breakpoints.$tab) {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .infoIcons {
+    margin-top: 1.75px !important;
+    cursor: pointer;
+    @media (max-width: breakpoints.$tab) {
+      margin-top: -1px !important;
+    }
+  }
+
+  .iconWithTooltip {
+    position: relative;
+    display: inline-block;
+
+    .tooltip {
+      visibility: hidden;
+      background-color: #2a2c33;
+
+      text-align: center;
+      border-radius: 6px;
+      padding: 5px;
+      position: absolute;
+      z-index: 1;
+      bottom: 125%;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0;
+      transition: opacity 0.3s;
+      white-space: nowrap;
+
+      text-align: center;
+
+      font-size: 13px;
+      font-weight: 200;
+      span {
+        padding: 7px 7px;
+        color: #fff;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #2a2c33 transparent transparent transparent;
+      }
+    }
+
+    &:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}

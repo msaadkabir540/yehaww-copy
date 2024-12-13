@@ -1,0 +1,41 @@
+.main {
+  width: 100%;
+  position: relative;
+  .errorMessage {
+    position: absolute;
+    display: block;
+    font-size: 11px;
+    margin-left: 1px;
+    margin-top: 2px;
+    color: #ff5050;
+  }
+}
+
+.phoneInput {
+  width: 100% !important;
+  background-color: transparent !important;
+  &:focus {
+    border: 1px solid #d5d5d5 !important;
+  }
+}
+
+.flagWrapper {
+  border: 1px solid #c0c0c0;
+  background-color: transparent !important;
+  &:focus {
+    border: 1px solid #d5d5d5 !important;
+  }
+  &:hover {
+    background-color: transparent !important;
+  }
+}
+
+.label {
+  font-weight: 600;
+  font-size: 15px;
+  color: #252525;
+}
+
+.container {
+  margin-top: 5px;
+}

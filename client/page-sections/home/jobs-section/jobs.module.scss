@@ -1,0 +1,44 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.mainJob {
+  margin-top: 40px;
+  .tabDiv {
+    display: flex;
+    align-items: center;
+    @media (max-width: breakpoints.$tab) {
+      display: none;
+    }
+    p {
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+      margin-right: 10px;
+      color: #c0c0c0;
+      padding: 10px 15px;
+      position: relative;
+      z-index: -1;
+      &:hover {
+        color: #959595;
+      }
+    }
+  }
+  .selectDiv {
+    display: none;
+    @media (max-width: breakpoints.$tab) {
+      display: block;
+    }
+  }
+  .btnDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0px;
+    button {
+      background-color: #ebebeb;
+      color: #bebebe;
+      max-width: 220px;
+    }
+  }
+}

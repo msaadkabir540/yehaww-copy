@@ -1,0 +1,38 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.main {
+  margin-bottom: 30px;
+  h1 {
+    font-weight: 500;
+    font-size: 30px;
+    color: #252525;
+    margin-top: 10px;
+    @media (max-width: breakpoints.$tab) {
+      font-size: 16px;
+    }
+  }
+  p {
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.025em;
+    color: #777777;
+    margin-top: 10px;
+    span {
+      font-style: italic;
+      color: colors.$btn;
+      font-weight: 500;
+      &:hover {
+        color: #252525;
+      }
+    }
+  }
+}
+.link {
+  color: #4186dd;
+  font-weight: 500;
+  &:hover {
+    color: colors.$btn;
+  }
+}

@@ -1,0 +1,175 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.form_container {
+  .borderForm {
+    border: none !important;
+    background-color: transparent !important;
+    padding: 0px !important;
+    margin: 20px 0 0px !important;
+    .gridTwo {
+      @include gridTwo(20, 20);
+      margin: 20px 0px;
+      @media (max-width: $lg) {
+        grid-template-columns: repeat(2, 1fr) !important;
+      }
+      @media (max-width: $md) {
+        grid-template-columns: repeat(1, 1fr) !important;
+      }
+      .label {
+        font-weight: 600;
+        font-size: 15px;
+        color: #252525;
+      }
+    }
+  }
+
+  .listWrapper {
+    margin-bottom: 20px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    span {
+      line-height: 2;
+    }
+    .btnDelete {
+      margin-top: 10px;
+      background-color: #ca1e1e;
+    }
+  }
+}
+.tableWidth {
+  margin-top: 15px;
+  padding: 0 10px;
+  @media (max-width: 1410px) {
+    max-width: 1380px;
+    overflow-x: auto;
+  }
+  .widthClass {
+    @media (max-width: 1410px) {
+      width: 1390px;
+    }
+    @media (max-width: $xxs) {
+      width: auto;
+    }
+    .tableHead {
+      background: rgba(227, 227, 227, 0.1);
+      border: 1px solid #ebebeb;
+      border-radius: 3px;
+      padding: 13px;
+      display: flex;
+      align-items: center;
+      @media (max-width: $xxs) {
+        display: none;
+      }
+      p {
+        font-weight: 500;
+        font-size: 17px;
+        color: #252525;
+        text-align: center;
+      }
+    }
+    .tableBody {
+      .tableRow {
+        padding: 13px;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #ebebeb;
+        &:last-child {
+          border-bottom: none;
+        }
+        @media (max-width: $xxs) {
+          display: none;
+        }
+        p {
+          font-weight: 400;
+          font-size: 14px;
+          color: #252525;
+          text-align: center;
+        }
+        .img {
+          width: 28px;
+          height: 24px;
+          margin-left: 10px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+.btnWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: $xxs) {
+    justify-content: flex-end;
+    gap: 10px;
+  }
+}
+.addExperience {
+  padding: 0 20px;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #ebebeb;
+  margin-bottom: 15px;
+  @media (max-width: $xs) {
+    padding: 0 10px 10px;
+  }
+}
+.btnDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ebebeb;
+}
+.btnClass {
+  padding: 0;
+  border: none;
+  background: none;
+  color: #b29e85;
+  font-size: 15px;
+  max-width: max-content;
+  height: max-content;
+  padding-bottom: 10px;
+  @media (max-width: $xxs) {
+    font-size: 12px;
+  }
+  &:hover {
+    border: none;
+  }
+}
+.noExperience {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 0;
+  P {
+    color: #cacaca;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 15px;
+  }
+}
+.gridFour {
+  @include gridFour(20, 20);
+  margin: 20px 0;
+  @media (max-width: $tab) {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  @media (max-width: 468px) {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}
+.table {
+  display: none;
+  @media (max-width: $xxs) {
+    display: block;
+    padding: 13px 0;
+    border-bottom: 1px solid #ebebeb;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}

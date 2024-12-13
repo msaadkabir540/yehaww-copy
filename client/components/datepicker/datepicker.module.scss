@@ -1,0 +1,52 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.main {
+  width: 100%;
+  position: relative;
+  label {
+    font-weight: 600;
+    font-size: 15px;
+    color: #252525;
+  }
+  .inpDiv {
+    border-radius: 4px;
+    padding: 10px 8px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 13px;
+    color: #252525;
+    background-color: transparent;
+    border: 1px solid #c0c0c0;
+    border-radius: 3px;
+    cursor: pointer;
+    height: 43px;
+    margin-top: 5px;
+  }
+}
+
+.icon {
+  position: absolute;
+  right: 6px;
+  top: 41px;
+  cursor: pointer;
+
+  .img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.errorMessage {
+  position: absolute;
+  display: block;
+  font-size: 12px;
+  margin-left: 1px;
+  margin-top: 2px;
+  color: #ff5050;
+}
+
+.borderClass {
+  border: 1px solid #ff5050 !important;
+}

@@ -1,0 +1,28 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.mainDiv {
+  position: fixed;
+  background-color: transparent;
+  inset: 0;
+  z-index: 2000;
+}
+
+.mainInner {
+  width: 100%;
+  z-index: 2500;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+  .navMenuWrapper {
+    li {
+      p {
+        color: #565656;
+        cursor: pointer;
+        padding: 10px 5px;
+        font-weight: 500;
+      }
+    }
+  }
+}

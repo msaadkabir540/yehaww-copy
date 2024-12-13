@@ -1,0 +1,88 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.form_container {
+  position: relative;
+  .flexClass {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 20px;
+    @media (max-width: $xs) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .heading {
+      font-weight: 600;
+      font-size: 20px;
+      color: #252525;
+      @media (max-width: 480px) {
+        font-size: 15px;
+      }
+    }
+    .selectContainer {
+      .selectClass {
+        padding: 0px 10px;
+        height: 38px;
+        width: 180px;
+      }
+      @media (max-width: $xs) {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        margin-top: 10px;
+      }
+    }
+  }
+  .gridTwo {
+    @include gridTwo(30, 20);
+    margin: 22px 0px 35px;
+  }
+  form {
+    .textField {
+      margin-bottom: 40px;
+      textArea {
+        height: 100%;
+        width: 100%;
+        min-height: 250px;
+        @media (max-width: breakpoints.$lg) {
+          width: 60%;
+        }
+        @media (max-width: breakpoints.$xl) {
+          width: 60%;
+        }
+      }
+    }
+    .buttonWrapper {
+      display: flex;
+      align-items: center;
+      .btnSave {
+        max-width: 90px !important;
+        margin-right: 10px;
+
+        .loaderClass {
+          border-color: rgb(255, 255, 255);
+          border-right: 2px solid transparent;
+          margin: auto;
+        }
+      }
+      .btnCancel {
+        color: colors.$btn;
+        max-width: 90px;
+        border: 1px solid colors.$btn;
+        background-color: transparent;
+      }
+    }
+  }
+}
+.label {
+  font-weight: 600;
+  font-size: 15px;
+  color: #252525;
+  width: 100%;
+}
+.flex {
+  justify-content: flex-end;
+}

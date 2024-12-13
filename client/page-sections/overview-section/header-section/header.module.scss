@@ -1,0 +1,48 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.bgDiv {
+  background-color: #448ccb;
+  padding: 15px 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  .innerFlex {
+    display: flex;
+    align-items: center;
+    p {
+      font-weight: 500;
+      font-size: 14px;
+      color: colors.$white;
+      margin-left: 7px;
+      margin-top: 0px;
+    }
+  }
+  p {
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 10px;
+    text-align: center;
+    color: colors.$white;
+  }
+  button {
+    margin-top: 10px;
+    border: 1px solid colors.$white;
+    color: colors.$white;
+    max-width: 150px;
+    background-color: transparent;
+  }
+}
+
+.icon {
+  font-size: 14px;
+  height: 14px;
+  width: 14px;
+  * {
+    color: #fff;
+    height: 14px;
+    width: 14px;
+  }
+}

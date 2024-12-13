@@ -1,0 +1,30 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.borderForm {
+  margin: 0px !important;
+}
+
+.form_container {
+  font-weight: 600;
+  font-size: 20px;
+  color: #252525;
+  border-bottom: 1px solid #ebebeb;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.innerFlex {
+  display: flex;
+  align-items: center;
+  button {
+    margin-right: 10px;
+    margin-bottom: 20px;
+  }
+  .btn {
+    background-color: transparent;
+    color: colors.$btn;
+    border: 1px solid colors.$btn;
+  }
+}

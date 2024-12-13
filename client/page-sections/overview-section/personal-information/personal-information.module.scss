@@ -1,0 +1,151 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.mainWraper {
+  @media (max-width: 480px) {
+    margin-top: 35px;
+  }
+  .heading {
+    font-weight: 600;
+    font-size: 20px;
+    color: #252525;
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 20px;
+    @media (max-width: 480px) {
+      font-size: 15px;
+    }
+  }
+  .grid {
+    @include gridTwo(17, 20);
+    margin: 20px 0px;
+  }
+  .desiredSub {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 20px;
+  }
+  .positionText {
+    margin-top: 5px;
+    font-size: 12px;
+  }
+  .positionText1 {
+    margin-top: 5px;
+    font-size: 12px;
+    @media (max-width: 480px) {
+      margin-top: 35px !important;
+    }
+  }
+  .label {
+    font-weight: 600;
+    font-size: 15px;
+    color: #252525;
+  }
+  .innerFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+    @media (max-width: $tab) {
+      flex-direction: column;
+    }
+
+    .btnClass {
+      border: 1px solid colors.$btn;
+      color: colors.$btn;
+      background-color: transparent;
+      max-width: 200px;
+      margin-left: 20px;
+      height: 43px;
+      @media (max-width: $tab) {
+        margin-top: 20px;
+      }
+    }
+  }
+  .visa_sec {
+    @include gridTwo(15, 20);
+    margin-top: 10px;
+    @media (max-width: $xs) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .check {
+      padding-left: 10px;
+    }
+  }
+
+  .partneredEmail {
+    margin-top: 20px;
+    padding: 0 20px 20px 20px;
+    .partnerLabelContainer {
+      display: flex;
+    }
+
+    .badgeDanger {
+      margin: 0px 5px !important;
+      background-color: #dc424f;
+      color: white !important;
+    }
+    .verifiedBadge {
+      margin: 0px 5px !important;
+      background-color: #17e024;
+      color: white !important;
+    }
+    .mailContainer {
+      display: flex;
+      flex-direction: column;
+      font-weight: 600;
+      font-size: 16px;
+      background-color: #f4f4f4;
+      padding: 10px;
+      margin-top: 10px;
+    }
+  }
+
+  .errorMessage {
+    font-size: 12px;
+    bottom: -18px;
+    color: #ff5050;
+  }
+
+  .verifyLoader {
+    border-color: #5d77a0 !important;
+    border-right: 2px solid white !important;
+    margin: auto;
+  }
+}
+
+.buttonWrapper {
+  display: flex;
+  align-items: center;
+  .btnSave {
+    max-width: 90px !important;
+    margin-right: 10px;
+
+    .loaderClass {
+      border-color: rgb(255, 255, 255);
+      border-right: 2px solid transparent;
+      margin: auto;
+    }
+  }
+  .btnCancel {
+    color: colors.$btn;
+    max-width: 90px;
+    border: 1px solid colors.$btn;
+    background-color: transparent;
+  }
+}
+.error {
+  width: 230px;
+}
+
+.pMailInput {
+  @media (max-width: 425px) {
+    margin-right: 15px;
+  }
+}
+.errorMsg {
+  color: #ff5050;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}

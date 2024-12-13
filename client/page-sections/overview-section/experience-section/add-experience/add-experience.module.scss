@@ -1,0 +1,71 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.form_container {
+  padding: 40px 0px;
+  min-height: calc(100vh - 337px);
+  .formWrapper {
+    margin: 30px auto;
+  }
+}
+
+.formBtnCancel {
+  margin-left: 10px;
+  border: 1px solid #9a1717;
+  color: #9a1717;
+  background-color: transparent;
+  @media (max-width: 410px) {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+  &:hover {
+    color: white;
+    background-color: #9a1717;
+  }
+}
+
+.borderForm {
+  border: none !important;
+  background-color: transparent !important;
+  padding: 0px !important;
+}
+.gridTwo {
+  @include gridTwo(20, 20);
+  margin: 20px 0px;
+  .label {
+    font-weight: 500;
+    font-size: 15px;
+    color: #252525;
+  }
+}
+.btnAdd {
+  width: 100%;
+  max-width: max-content;
+  margin-bottom: 20px;
+  border: 2px solid colors.$btn;
+  &:hover {
+    border: 2px solid colors.$btn;
+  }
+}
+.btnCancel {
+  width: 100%;
+  max-width: max-content;
+  color: colors.$btn;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border: 2px solid colors.$btn;
+  &:hover {
+    border: 2px solid #b29e85;
+  }
+}
+.titleClass {
+  font-size: 18px !important;
+  font-weight: 600 !important;
+}
+.modalContainer {
+  padding: 20px !important;
+}
+.grid {
+  @include gridTwo(10, 10);
+}

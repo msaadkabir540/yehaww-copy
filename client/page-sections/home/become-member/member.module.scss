@@ -1,0 +1,75 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.parent {
+  background-image: url(../../../public/assets/icons/member.webp);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  transition: all 0.5s;
+
+  .detailsec {
+    padding: 46px 95px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    @media (max-width: 500px) {
+      align-items: center;
+    }
+    .headingsec {
+      padding: 0 25px;
+      max-width: 1300px;
+      width: 100%;
+      h6 {
+        color: colors.$white;
+        font-size: 37px;
+        margin-bottom: 7px;
+        font-weight: 700;
+      }
+      .para1 {
+        color: colors.$white;
+        font-size: 14px;
+        line-height: 1.5;
+        font-weight: 500;
+      }
+      .para2 {
+        color: colors.$white;
+        font-size: 14px;
+        margin-left: 5px;
+        cursor: pointer;
+        text-decoration: underline;
+        &:hover {
+          color: black;
+        }
+      }
+      @media (max-width: breakpoints.$tab) {
+        padding: 0;
+        margin-bottom: 20px;
+      }
+    }
+    .btnsec {
+      max-width: 170px;
+      width: 100%;
+      margin-right: 30px;
+      @media (max-width: 500px) {
+        margin-right: 0;
+      }
+      button {
+        background-color: transparent;
+        color: colors.$white;
+        border: 1px solid colors.$white;
+        max-width: 160px;
+        &:hover {
+          color: #252525;
+          border: 1px solid #252525;
+        }
+      }
+    }
+    @media (max-width: breakpoints.$tab) {
+      padding: 20px 10px 20px 10px;
+      flex-direction: column;
+      margin-top: 20px;
+    }
+  }
+}

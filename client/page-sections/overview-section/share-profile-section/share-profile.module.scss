@@ -1,0 +1,47 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.form_container {
+  position: relative;
+  .headerWrapper {
+    margin-bottom: 10px;
+    h2 {
+      font-size: 30px;
+      padding: 10px 0px;
+    }
+    .headerContent {
+      font-size: 14px;
+      font-weight: 300;
+      padding: 10px 0px;
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+  .contentWrapper {
+    h2 {
+      font-size: 18px;
+      padding: 10px 0px;
+    }
+  }
+}
+
+.content {
+  font-size: 14px;
+  font-weight: 300;
+  padding: 10px 0px;
+}
+
+.linkWrapper {
+  padding: 10px 0px;
+}
+
+.profileLink {
+  color: #4086dd;
+  text-decoration: underline;
+  font-weight: 300;
+  &:hover {
+    color: #959595;
+  }
+}

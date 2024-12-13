@@ -1,0 +1,102 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.form_container {
+  .referenceNote {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22.5px;
+    margin: 10px 0px 20px 0px;
+  }
+}
+
+.btnAdd {
+  width: 100%;
+  max-width: 180px;
+  margin-top: 15px;
+  color: #5d77a0;
+  background-color: transparent;
+  border: 2px solid #5d77a0;
+  &:hover {
+    color: black;
+    border-color: black;
+  }
+}
+
+.boldText {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.buttonWrapper {
+  display: flex;
+  align-items: center;
+  .btnSave {
+    max-width: 90px !important;
+    margin-right: 10px;
+
+    .loaderClass {
+      border-color: rgb(255, 255, 255);
+      border-right: 2px solid transparent;
+      margin: auto;
+    }
+  }
+  .btnCancel {
+    color: colors.$btn;
+    max-width: 90px;
+    border: 1px solid colors.$btn;
+    background-color: transparent;
+  }
+}
+.loaderClass {
+  border-color: rgb(255, 255, 255);
+  border-right: 2px solid transparent;
+  margin: auto;
+}
+
+.uploadInput {
+  margin-top: 20px;
+  width: 100%;
+  span {
+    font-weight: 400;
+    font-size: 13px;
+    display: flex;
+    justify-content: flex-end;
+    color: #252525;
+  }
+}
+
+.linkTag {
+  color: colors.$btn;
+  text-decoration: underline;
+  &:hover {
+    color: #959595;
+  }
+}
+
+.docPreview {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  img {
+    padding: 3px;
+    border: 1px solid colors.$btn;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  .btnDelete {
+    background: transparent;
+    color: colors.$btn;
+    border: 1px solid colors.$btn;
+    padding: 3px 10px;
+    height: 25px;
+  }
+}
+
+.borderForm {
+  border: none !important;
+  background-color: transparent !important;
+  padding: 0px !important;
+}

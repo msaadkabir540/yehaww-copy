@@ -1,0 +1,7 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.form {
+  min-height: calc(100vh - 198px);
+}

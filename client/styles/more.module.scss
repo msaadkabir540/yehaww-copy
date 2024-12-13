@@ -1,0 +1,104 @@
+@import "./colors.scss";
+@import "./breakpoints";
+@import "./mixin.scss";
+
+.footerHide {
+  display: none !important;
+}
+.parentDiv {
+  min-height: calc(100vh - 198px);
+  .headingDiv {
+    background: #f4f4f4;
+    border-bottom: 1px solid rgba(44, 44, 44, 0.05);
+    position: relative;
+    padding: 50px 0px;
+
+    h1 {
+      font-size: 27px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      img {
+        height: 22px;
+        margin: 0 20px;
+      }
+      span {
+        font-size: 30px;
+        color: #959595;
+        font-weight: 300;
+        cursor: pointer;
+        &:hover {
+          color: $btn;
+        }
+      }
+    }
+  }
+  .moreSec2 {
+    background-color: #ffffff;
+  }
+}
+
+.form_container {
+  position: relative;
+  margin: 30px 0px;
+  .para {
+    font-size: 18px;
+    font-weight: 800;
+    margin: 0 40px 0 -10px;
+    padding: 0 10px;
+    position: absolute;
+    left: 18px;
+    top: -10px;
+    background-color: white;
+    span {
+      color: $btn;
+      text-decoration: underline;
+      cursor: pointer;
+      &:hover {
+        color: #959595;
+      }
+    }
+  }
+  .name_field {
+    @include gridTwo(20, 20);
+    border: 2px solid #d5d5d5;
+    padding: 10px 20px 25px 20px;
+    border-radius: 3px;
+  }
+  .field {
+    margin-top: 20px;
+  }
+  .password_field {
+    @media (max-width: $tab) {
+      max-width: 100%;
+    }
+  }
+  .checkboxDiv {
+    margin-top: 30px;
+    .checkbox {
+      display: flex;
+      align-items: center;
+      margin-top: 15px;
+    }
+    p {
+      font-size: 14px;
+      margin-top: 5px;
+      span {
+        color: $btn;
+        text-decoration: underline;
+        cursor: pointer;
+        margin: 0px 5px;
+        &:hover {
+          color: #959595;
+        }
+      }
+    }
+  }
+  button {
+    max-width: 100px;
+    margin-top: 30px;
+    &:hover {
+      background-color: #2c2c2c;
+    }
+  }
+}

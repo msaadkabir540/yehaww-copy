@@ -1,0 +1,102 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.parent_div {
+  display: block;
+  position: relative;
+  padding: 80px 60px;
+  margin: 50px 0px;
+  @media (max-width: breakpoints.$tab) {
+    padding: 30px;
+  }
+  .grid {
+    .left_sec {
+      h2 {
+        color: colors.$white;
+        font-size: 50px;
+        font-weight: 900;
+        @media (max-width: breakpoints.$md) {
+          font-size: 40px;
+        }
+        @media (max-width: breakpoints.$tab) {
+          flex-direction: row;
+        }
+      }
+      p {
+        color: colors.$white;
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 25px;
+        line-height: 1.5;
+        max-width: 800px;
+        width: 100%;
+        @media (max-width: breakpoints.$md) {
+          max-width: 100%;
+        }
+      }
+      .btn_sec {
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        a {
+          margin-right: 20px;
+          @media (max-width: breakpoints.$tab) {
+            width: 100%;
+            margin-right: 0px;
+          }
+        }
+        .btn2 {
+          color: white;
+          height: 50px;
+          margin-right: 20px;
+          border: 1px solid white;
+          max-width: 250px;
+          background-color: transparent;
+          &:hover {
+            color: #252525;
+            border: 1px solid #252525;
+          }
+          @media (max-width: breakpoints.$tab) {
+            margin-top: 20px;
+            margin-right: 0px;
+            max-width: 100%;
+          }
+        }
+        @media (max-width: breakpoints.$tab) {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
+.parent_div::after {
+  content: "";
+  background-image: url("/assets/hiring-bg.webp");
+  top: 0;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  object-fit: cover;
+  z-index: -1;
+  @media (max-width: breakpoints.$tab) {
+    background-image: url("/assets/hiing-bg-small.webp");
+  }
+}
+.disable {
+  color: #252827;
+  height: 50px;
+  margin-right: 20px;
+  border: 1px solid #252827;
+  max-width: 250px;
+  background-color: transparent;
+  @media (max-width: breakpoints.$tab) {
+    margin-top: 20px;
+    margin-right: 0px;
+    max-width: 100%;
+  }
+}

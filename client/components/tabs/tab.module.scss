@@ -1,0 +1,53 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.main {
+  gap: 8px;
+  display: flex;
+  @media (max-width: $xs) {
+    gap: 4px;
+  }
+  .btn {
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    max-width: 121px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 3px;
+    border: 1px solid #b29e85;
+    font-size: calc(8px + (13 - 8) * (100vw - 280px) / (2560 - 280));
+    @media (max-width: $xs) {
+      padding: 7px 3px;
+    }
+  }
+  .selected {
+    color: white;
+    background: #b29e85;
+    border-color: #b29e85;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+}
+.container {
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(227, 227, 227, 0.1);
+  @media (max-width: $xs) {
+    padding: 10px 5px;
+  }
+  p {
+    font-size: 15px;
+    font-weight: 600;
+    color: #252525;
+    margin-bottom: 5px;
+  }
+}
+.errorMessage {
+  position: absolute;
+  display: block;
+  font-size: 11px;
+  color: #ff5050;
+  bottom: -18px;
+  left: 5px;
+}

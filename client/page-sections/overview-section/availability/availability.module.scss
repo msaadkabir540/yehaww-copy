@@ -1,0 +1,48 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.form_container {
+  position: relative;
+  .heading {
+    font-weight: 600;
+    font-size: 20px;
+    color: #252525;
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 20px;
+    @media (max-width: 480px) {
+      font-size: 15px;
+    }
+  }
+  .formWrapper {
+    @include gridTwo(20, 20);
+    margin: 23px 0px;
+  }
+  .buttonWrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 23px;
+    .btnSave {
+      max-width: 90px !important;
+      margin-right: 10px;
+
+      .loaderClass {
+        border-color: rgb(255, 255, 255);
+        border-right: 2px solid transparent;
+        margin: auto;
+      }
+    }
+    .btnCancel {
+      color: colors.$btn;
+      max-width: 90px;
+      border: 1px solid colors.$btn;
+      background-color: transparent;
+    }
+  }
+}
+
+.loaderClass {
+  border-color: rgb(255, 255, 255);
+  border-right: 2px solid transparent;
+  margin: auto;
+}

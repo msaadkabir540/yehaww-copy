@@ -1,0 +1,42 @@
+@import "./colors.scss";
+@import "./breakpoints";
+@import "./mixin.scss";
+
+.loginMain {
+  .resetPasswordDiv {
+    background-color: #fafafa;
+    padding: 15px;
+    h6 {
+      font-weight: 500;
+      font-size: 14px;
+      text-align: center;
+      color: #252522;
+      span {
+        text-decoration: underline;
+        color: $btn;
+        cursor: pointer;
+      }
+    }
+    p {
+      font-size: 14px;
+      text-align: center;
+      color: #252522;
+      margin-top: 5px;
+      span {
+        text-decoration: underline;
+        cursor: pointer;
+        color: $btn;
+      }
+    }
+  }
+
+  .field {
+    margin-top: 20px;
+  }
+  .btnDiv {
+    margin-top: 20px;
+    button {
+      max-width: 150px;
+    }
+  }
+}

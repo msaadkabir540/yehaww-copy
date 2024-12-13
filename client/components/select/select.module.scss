@@ -1,0 +1,73 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.selectDiv {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.select {
+  margin-top: 5px;
+  border-radius: 4px;
+  padding: 10px 8px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 13px;
+  color: #252525;
+  background-color: transparent;
+  border: 1px solid #c0c0c0;
+  border-radius: 3px;
+  cursor: pointer;
+  height: 43px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  &:focus {
+    outline: none;
+    border: 1px solid #d5d5d5 !important;
+  }
+  &::placeholder {
+    font-size: 13px;
+    font-weight: 400;
+    color: #c0c0c0;
+  }
+  option {
+    font-size: 14px;
+    color: #111112;
+    padding: 10px !important;
+    &:hover {
+      background-color: colors.$btn;
+    }
+  }
+}
+
+.icon {
+  position: absolute;
+  right: 8px;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+.label {
+  font-weight: 600;
+  font-size: 15px;
+  color: #252525;
+}
+
+.errorMessage {
+  position: absolute;
+  display: block;
+  font-size: 11px;
+  color: #ff5050;
+}
+
+.select option:first-child {
+  color: #959595 !important;
+}
+
+.select {
+  color: #0e0e0e !important;
+}

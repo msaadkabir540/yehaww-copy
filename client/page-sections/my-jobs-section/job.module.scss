@@ -1,0 +1,88 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.headingDiv {
+  margin-top: 23px;
+}
+.breadCrumb {
+  padding: 0 !important;
+  border: none !important;
+}
+.breadCrumbContainer {
+  padding: 0px;
+  @media (max-width: breakpoints.$tab) {
+    display: none;
+  }
+}
+.breadCrumbContainer1 {
+  display: none;
+  @media (max-width: breakpoints.$tab) {
+    display: flex;
+  }
+}
+
+.mainJob {
+  background: #fafafa;
+  border: 1.36308px solid #ebebeb;
+  border-radius: 5.45231px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  padding: 20px 25px;
+  position: relative;
+  @media (max-width: breakpoints.$tab) {
+    margin-top: 0px;
+    padding: 22px 15px;
+    width: 100%;
+  }
+  .small {
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 15px;
+    @media (max-width: breakpoints.$tab) {
+      width: 100%;
+      justify-content: space-between;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .tabDiv {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    @media (max-width: breakpoints.$tab) {
+      display: none;
+    }
+
+    p {
+      border: 1px solid transparent;
+      border-radius: 3px;
+      padding: 7px 15px;
+      font-weight: 500;
+      font-size: 16px;
+      color: #c0c0c0;
+      cursor: pointer;
+      font-family: "Poppins", sans-serif;
+      &:hover {
+        color: #b29e85;
+      }
+    }
+  }
+}
+.icon1 {
+  font-size: 20px;
+  height: 20px;
+  width: 20px;
+  display: none;
+
+  * {
+    color: #959595;
+    height: 20px;
+    width: 20px;
+  }
+
+  @media (max-width: breakpoints.$tab) {
+    display: block;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,29 @@
+@use "/styles/colors";
+@use "styles/breakpoints";
+@import "styles/mixin";
+
+.videoMain {
+  margin-top: 20px;
+
+  .tag {
+    background-color: #aeaeae !important;
+    text-transform: uppercase;
+    width: fit-content;
+  }
+  .btn {
+    flex-direction: column;
+    a {
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+}
+
+.btnSecond {
+  background-color: #d5d5d5;
+  color: #2c2c2c;
+  margin-top: 10px;
+}
+.grid {
+  @include gridThree(30, 30);
+}

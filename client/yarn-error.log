@@ -1,0 +1,70 @@
+Arguments: 
+  C:\Users\muham_tdkawmx\programs\nodejs\node.exe C:\Users\muham\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js
+
+PATH: 
+  C:\Users\muham\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\muham\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Git\cmd;C:\Program Files\dotnet;C:\Users\muham\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\FFmpeg\bin;C:\Users\muham\AppData\Local\Yarn\bin;C:\Users\muham_tdkawmx\programs\nodejs;C:\Program Files\PuTTY;C:\Program Files\MySQL\MySQL Shell 8.0\bin;C:\Users\muham\AppData\Local\Microsoft\WindowsApps;C:\Users\muham\AppData\Roaming\npm;C:\Users\muham\.dotnet\tools;C:\Users\muham\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.16.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: connect ENETUNREACH 104.16.20.35:443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1187:16)
+
+npm manifest: 
+  {
+    "name": "yehaww",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start",
+      "lint": "next lint"
+    },
+    "dependencies": {
+      "@fortawesome/fontawesome-svg-core": "^6.1.2",
+      "@fortawesome/free-brands-svg-icons": "^6.1.2",
+      "@fortawesome/free-solid-svg-icons": "^6.1.2",
+      "@fortawesome/react-fontawesome": "^0.2.0",
+      "@hookform/resolvers": "^2.9.7",
+      "@react-google-maps/api": "^2.13.1",
+      "@reduxjs/toolkit": "^1.8.4",
+      "axios": "^1.1.3",
+      "joi": "^17.6.0",
+      "moment": "^2.29.4",
+      "next": "12.2.4",
+      "next-redux-wrapper": "^7.0.5",
+      "react": "^17.0.2",
+      "react-circular-progressbar": "^2.1.0",
+      "react-datepicker": "^4.8.0",
+      "react-dom": "^17.0.2",
+      "react-geocode": "^0.2.3",
+      "react-hook-form": "^7.34.2",
+      "react-phone-input-2": "^2.15.1",
+      "react-redux": "^8.0.2",
+      "react-responsive-carousel": "^3.2.23",
+      "react-select": "^5.4.0",
+      "react-to-print": "^2.14.7",
+      "react-toastify": "^9.0.8",
+      "sass": "^1.54.4",
+      "yup": "^0.32.11"
+    },
+    "devDependencies": {
+      "@next/bundle-analyzer": "^13.0.6",
+      "eslint": "8.21.0",
+      "eslint-config-next": "12.2.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  
